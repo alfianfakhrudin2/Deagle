@@ -3,4 +3,19 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_menu_1">Berbagai Kategori Kelas</string>
+    <string name="title_menu_2">Mentor</string>
+    <string name="title_menu_3">Uji Kompetensi</string>
+    <string name="title_menu_4">Sertifikat</string>
+    <string name="title_menu_5">Jaringan Internet</string>
+
+    <string name="desc_menu_1">Tersedia berbagai kategori kelas, sesuai minat kamu, untuk membantumu meningkatkan skill digital</string>
+    <string name="desc_menu_2">Kamu akan dibimbing mentor yang berpengalaman dibidangnya. Ada juga fitur ulasan mentor untuk menyampaikan keluh kesahmu tentang kinerja mentor lho!.</string>
+    <string name="desc_menu_3">Akan ada quiz-quiz untuk menguji pemahamanmu terkait materi. Menariknya, tersedia fitur lapor ketika kamu menjumpai kesalahan soal maupun jawaban</string>
+    <string name="desc_menu_4">Setelah berhasil menyelesaikan kelas, kamu akan diberi sertifikat yang tentunya bermanfaat untuk mendukung pencapaian karirmu</string>
+    <string name="desc_menu_5">Sebelum memulai, pastikan jaringan internet kamu lancar, agar proses belajar dan penerapan materi bisa maksimal</string>
+    <string name="learn_now">Belajar Sekarang</string>
 </resources>
