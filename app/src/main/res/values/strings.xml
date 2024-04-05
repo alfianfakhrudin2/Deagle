@@ -18,10 +18,14 @@
     <string name="desc_menu_4">Setelah berhasil menyelesaikan kelas, kamu akan diberi sertifikat yang tentunya bermanfaat untuk mendukung pencapaian karirmu</string>
     <string name="desc_menu_5">Sebelum memulai, pastikan jaringan internet kamu lancar, agar proses belajar dan penerapan materi bisa maksimal</string>
     <string name="learn_now">Belajar Sekarang</string>
-    <string name="password">password</string>
-    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
     <string name="logo">logo login</string>
     <string name="login">Masuk ke akun Anda</string>
     <string name="forget_password">lupa password?</string>
     <string name="loginBtn">Login</string>
+    <string name="cPassword">Confirm Password</string>
+    <string name="regist">Daftarkan Akun Anda</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="signup">Signup</string>
 </resources>
