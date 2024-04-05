@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.deagle.R
-import com.example.deagle.databinding.ActivityMainBinding
 import com.example.deagle.databinding.ActivityOnboardingBinding
+
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
