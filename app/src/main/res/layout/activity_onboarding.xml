@@ -165,48 +165,6 @@
         app:layout_constraintTop_toBottomOf="@+id/titleMenu4"
         android:text="@string/desc_menu_4" />
 
-<!-- MENU 5 WEY   -->
-    <ImageView
-        android:id="@+id/logoMenu5"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:src="@drawable/img5"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-    />
-
-    <TextView
-        android:id="@+id/titleMenu5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/logoMenu5"
-        app:layout_constraintStart_toStartOf="@+id/logoMenu5"
-        app:layout_constraintTop_toBottomOf="@+id/logoMenu5"
-        android:text="@string/title_menu_5" />
-
-    <TextView
-        android:id="@+id/descMenu5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/titleMenu5"
-        app:layout_constraintStart_toStartOf="@+id/titleMenu5"
-        app:layout_constraintTop_toBottomOf="@+id/titleMenu5"
-        android:text="@string/desc_menu_5" />
-
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu1"
         android:layout_width="30dp"
@@ -255,23 +213,9 @@
         android:layout_marginEnd="32dp"
         app:altSrc="@drawable/ic_circle_full"
         app:layout_constraintBottom_toBottomOf="@+id/menu3"
-        app:layout_constraintEnd_toStartOf="@+id/menu5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/menu3"
         app:layout_constraintTop_toTopOf="@+id/menu3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_circle"
-        app:tint="@color/black" />
-
-    <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:id="@+id/menu5"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="32dp"
-        app:altSrc="@drawable/ic_circle_full"
-        app:layout_constraintBottom_toBottomOf="@id/menu4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/menu4"
-        app:layout_constraintTop_toTopOf="@id/menu4"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle"
         app:tint="@color/black" />
@@ -282,7 +226,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:alpha="0"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/primaryClr"
         android:text="@string/learn_now"
         app:layout_constraintBottom_toTopOf="@+id/menu2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -296,6 +240,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img4" />
+        app:srcCompat="@drawable/img1" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

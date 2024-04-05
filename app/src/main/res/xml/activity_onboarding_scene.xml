@@ -422,29 +422,4 @@
         motion:constraintSetEnd="@+id/menu4" >
         <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
-    <Transition
-        motion:constraintSetStart="@+id/menu4"
-        motion:constraintSetEnd="@+id/menu5" >
-        <OnSwipe motion:dragDirection="dragLeft" />
-    </Transition>
-    <ConstraintSet
-        android:id="@+id/menu5"
-        motion:deriveConstraintsFrom="@+id/menu4" >
-        <Constraint
-            android:id="@+id/logoMenu4"
-            motion:layout_constraintStart_toEndOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintVertical_bias="0.3"
-            motion:layout_constraintTop_toTopOf="parent" />
-        <Constraint
-            android:id="@+id/logoMenu5"
-            motion:layout_constraintStart_toEndOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintVertical_bias="0.3"
-            motion:layout_constraintTop_toTopOf="parent" />
-    </ConstraintSet>
 </MotionScene>
