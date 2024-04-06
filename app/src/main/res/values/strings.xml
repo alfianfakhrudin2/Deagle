@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Deagle</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_class">Kelas</string>
+    <string name="title_transaksi">Notifikasi</string>
+    <string name="title_profile">Profil</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -28,4 +32,10 @@
     <string name="regist">Daftarkan Akun Anda</string>
     <string name="username">Nama Pengguna</string>
     <string name="signup">Signup</string>
+    <string name="desc_start">Mulai perjalanmu bersama <font color="#09AD7C">Deagle</font>. Yakinkanlah pada dirimu bahwa konsisten adalah kunci dari tercapainya tujuan yang kamu inginkan</string>
+    <string name="title_start">Mulai Perjalananmu</string>
+    <string name="name">Hai, Ahmad</string>
+    <string name="kategori">Kategori</string>
+    <string name="kursus_deagle">Kursus <font color="#09AD7C">Deagle</font></string>
+    <string name="ui_ux_design_mastery">UI/UX Design Mastery</string>
 </resources>
