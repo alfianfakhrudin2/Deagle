@@ -22,4 +22,16 @@
         android:name="com.example.deagle.ui.kelas.ClassFragment"
         android:label="@string/title_class"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_transaksi"
+        android:name="com.example.deagle.ui.transactions.TransactionsFragment"
+        android:label="@string/title_transaksi"
+        tools:layout="@layout/fragment_transactions" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.deagle.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

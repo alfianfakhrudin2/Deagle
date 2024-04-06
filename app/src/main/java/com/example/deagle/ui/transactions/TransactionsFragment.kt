@@ -6,13 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.deagle.R
 import com.example.deagle.databinding.FragmentNotificationsBinding
+import com.example.deagle.databinding.FragmentTransactionsBinding
 import com.example.deagle.ui.kelas.ClassViewModel
 
 class TransactionsFragment : Fragment() {
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentTransactionsBinding? = null
     private val binding get() = _binding!!
     companion object {
         fun newInstance() = TransactionsFragment()
@@ -24,16 +26,27 @@ class TransactionsFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         // TODO: Use the ViewModel
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val classViewModel =
+        val TransactionsViewModel =
             ViewModelProvider(this).get(ClassViewModel::class.java)
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentTransactionsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        return inflater.inflate(R.layout.fragment_transactions, container, false)
+
+        val textView: TextView = binding.textTransactions
+        TransactionsViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+
+        return root
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
