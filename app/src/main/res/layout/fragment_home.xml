@@ -138,6 +138,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:orientation="vertical">
 
             <!-- Baris Pertama -->
@@ -172,12 +173,7 @@
                     android:text="Filter 3" />
 
                 <!-- Filter 4 -->
-                <Button
-                    android:id="@+id/filterButton4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="Filter 4" />
+
 
             </LinearLayout>
 
@@ -212,13 +208,7 @@
                     android:layout_marginEnd="16dp"
                     android:text="Filter 7" />
 
-                <!-- Filter 8 -->
-                <Button
-                    android:id="@+id/filterButton8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="Filter 8" />
+
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
