@@ -21,7 +21,7 @@
         android:id="@+id/navigation_class"
         android:name="com.example.deagle.ui.kelas.ClassFragment"
         android:label="@string/title_class"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_class" />
 
     <fragment
         android:id="@+id/navigation_transaksi"

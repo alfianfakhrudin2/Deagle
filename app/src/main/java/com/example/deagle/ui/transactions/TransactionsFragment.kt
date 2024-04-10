@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.example.deagle.R
-import com.example.deagle.databinding.FragmentNotificationsBinding
 import com.example.deagle.databinding.FragmentTransactionsBinding
 import com.example.deagle.ui.kelas.ClassViewModel
 
