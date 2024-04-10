@@ -17,8 +17,8 @@ class ClassFragment : Fragment() {
     companion object {
         @StringRes
         private val TAB_TITLES = intArrayOf(
-            R.string.email,
-            R.string.cPassword
+            R.string.aktif,
+            R.string.riwayat
         )
     }
 

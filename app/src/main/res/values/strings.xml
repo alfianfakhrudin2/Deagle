@@ -3,7 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_class">Kelas</string>
-    <string name="title_transaksi">Notifikasi</string>
+    <string name="title_transaksi">Transaksi</string>
     <string name="title_profile">Profil</string>
 
 
@@ -30,6 +30,8 @@
     <string name="loginBtn">Login</string>
     <string name="cPassword">Confirm Password</string>
     <string name="regist">Daftarkan Akun Anda</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="aktif">Aktif</string>
     <string name="username">Nama Pengguna</string>
     <string name="signup">Signup</string>
     <string name="desc_start">Mulai perjalanmu bersama <font color="#09AD7C">Deagle</font>. Yakinkanlah pada dirimu bahwa konsisten adalah kunci dari tercapainya tujuan yang kamu inginkan</string>
