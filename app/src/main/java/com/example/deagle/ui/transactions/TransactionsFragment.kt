@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.deagle.databinding.FragmentTransactionsBinding
+
 import com.example.deagle.ui.kelas.ClassViewModel
 
 class TransactionsFragment : Fragment() {
