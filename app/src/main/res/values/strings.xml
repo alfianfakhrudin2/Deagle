@@ -42,4 +42,5 @@
     <string name="kategori">Kategori</string>
     <string name="kursus_deagle">Kursus <font color="#09AD7C">Deagle</font></string>
     <string name="ui_ux_design_mastery">UI/UX Design Mastery</string>
+    <string name="sertifikat_saya">Sertifikat Saya</string>
 </resources>

@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
-            android:text="Edit Profile"
+            android:text="@string/sertifikat_saya"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_sertif"
             app:layout_constraintStart_toEndOf="@+id/ic_sertif"
