@@ -1,13 +1,17 @@
 package com.example.deagle.ui.profile
 
+import android.content.Intent
 import androidx.fragment.app.viewModels
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.deagle.LoginActivity
 import com.example.deagle.R
 import com.example.deagle.databinding.FragmentProfileBinding
 import com.example.deagle.ui.kelas.ClassViewModel
@@ -24,6 +28,7 @@ class ProfileFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        (activity as AppCompatActivity?)?.supportActionBar?.hide()
         // TODO: Use the ViewModel
     }
 
@@ -31,16 +36,25 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val TransactionsViewModel =
-            ViewModelProvider(this).get(ClassViewModel::class.java)
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return inflater.inflate(R.layout.fragment_profile, container, false)
 
-
+    }
 //        TransactionsViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
 
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // Implementasi ketika tombol di klik
+        view.findViewById<Button>(R.id.signupButton).setOnClickListener {
+            // Membuat Intent untuk berpindah ke Activity
+            val intent = Intent(activity, LoginActivity::class.java)
+
+            // (Opsional) Mengirim data menggunakan Intent
+            intent.putExtra("key", "value")
+
+            // Memulai Activity baru
+            startActivity(intent)
+        }
     }
 }

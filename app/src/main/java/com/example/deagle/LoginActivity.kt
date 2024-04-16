@@ -2,7 +2,11 @@ package com.example.deagle
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -19,12 +23,35 @@ class LoginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
         binding.loginButton.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            // Menampilkan alert dialog
+            showSuccessAlertDialog()
         }
 
         binding.txtSignup.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
         supportActionBar?.hide()
+    }
+
+    private fun showSuccessAlertDialog() {
+        val builder = AlertDialog.Builder(this)
+        val inflater = LayoutInflater.from(this)
+        val view: View = inflater.inflate(R.layout.custom_dialog_login, null)
+
+        builder.setView(view)
+
+        val alertDialog: AlertDialog = builder.create()
+
+        alertDialog.setCanceledOnTouchOutside(false)
+
+        val btnLanjutkanLogin = view.findViewById<Button>(R.id.btnLanjutkanLogin1)
+
+        btnLanjutkanLogin.setOnClickListener {
+            alertDialog.dismiss()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        alertDialog.show()
     }
 }

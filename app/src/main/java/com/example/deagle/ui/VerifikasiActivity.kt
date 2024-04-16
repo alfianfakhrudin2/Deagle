@@ -1,5 +1,6 @@
 package com.example.deagle.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,10 +8,8 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.deagle.LoginActivity
 import com.example.deagle.R
-import com.example.deagle.databinding.ActivityStartBinding
 import com.example.deagle.databinding.ActivityVerifikasiBinding
 
 class VerifikasiActivity : AppCompatActivity() {
@@ -32,7 +31,7 @@ class VerifikasiActivity : AppCompatActivity() {
         // Membuat AlertDialog.Builder
         val builder = AlertDialog.Builder(this)
         val inflater = LayoutInflater.from(this)
-        val view: View = inflater.inflate(R.layout.custome_dialog, null)
+        val view: View = inflater.inflate(R.layout.custome_dialog_regist, null)
 
         // Menentukan view untuk AlertDialog
         builder.setView(view)
@@ -51,6 +50,8 @@ class VerifikasiActivity : AppCompatActivity() {
             // Menutup AlertDialog
             alertDialog.dismiss()
             // Tambahkan kode lanjutan di sini jika diperlukan
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         // Menampilkan AlertDialog
