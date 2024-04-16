@@ -225,7 +225,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:alpha="0"
         android:backgroundTint="@color/primaryClr"
         android:text="@string/learn_now"
         app:layout_constraintBottom_toTopOf="@+id/menu2"

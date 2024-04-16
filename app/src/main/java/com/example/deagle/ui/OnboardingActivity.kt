@@ -1,5 +1,6 @@
 package com.example.deagle.ui
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowInsets
@@ -8,12 +9,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.deagle.LoginActivity
 import com.example.deagle.R
 import com.example.deagle.databinding.ActivityOnboardingBinding
 
 
 class OnboardingActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityOnboardingBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
@@ -28,6 +32,10 @@ class OnboardingActivity : AppCompatActivity() {
         }
 
         setupView()
+
+        binding.button.setOnClickListener {
+            startActivity(Intent(this, StartActivity::class.java))
+        }
     }
 
     private fun setupView() {
@@ -42,4 +50,5 @@ class OnboardingActivity : AppCompatActivity() {
         }
         supportActionBar?.hide()
     }
+
 }

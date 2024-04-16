@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_start" />
+        android:src="@drawable/img_start" />
 
     <TextView
         android:id="@+id/titleTextViewWelcome"
@@ -64,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descTextView"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signupButton"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
