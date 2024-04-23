@@ -10,4 +10,5 @@
     <color name="primaryClr">#09AD7C</color>
     <color name="fonts">#464646</color>
     <color name="red">#FF0000</color>
+    <color name="desc">#3A3F3E</color>
 </resources>

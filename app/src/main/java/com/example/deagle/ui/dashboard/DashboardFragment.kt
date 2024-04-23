@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.deagle.R
 import com.example.deagle.databinding.FragmentDashboardBinding
 
 
@@ -29,6 +31,14 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        binding.searchView.setOnClickListener{
+            val searchQuery = binding.searchView.query.toString().trim()
+            if(searchQuery.isNotEmpty()){
+//                viewModel.searchContents(searchQuery, 30)
+//                binding.chipGroup.check(R.id.chip_explore)
+            }
+
+        }
 //        val textView: TextView = binding.textDashboard
 //        dashboardViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it

@@ -16,14 +16,14 @@
         android:textSize="21sp"
         android:textStyle="bold"
         android:fontFamily="@font/font_1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Back Button -->
     <ImageView
-        android:id="@+id/imageViewBack"
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
@@ -92,13 +92,16 @@
 
         <!-- Arrow Icon -->
         <Button
+            android:id="@+id/btnLihatSertifikat"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="52dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/primaryClr"
             android:text="Lihat Sertifikat"
-            android:textSize="10sp"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/font_1"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -154,13 +157,15 @@
         <!-- Button Lihat sertif -->
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="52dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/primaryClr"
             android:text="Lihat Sertifikat"
-            android:textSize="10sp"
+            android:textSize="11sp"
+            android:fontFamily="@font/font_1"
             android:textColor="@android:color/white"
+            android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_data" />

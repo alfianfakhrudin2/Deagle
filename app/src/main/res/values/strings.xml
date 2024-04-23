@@ -45,4 +45,6 @@
     <string name="sertifikat_saya">Sertifikat Saya</string>
     <string name="deskripsi_verifikasi">Kami telah mengirimkan kode ke nomor \n083543131129</string>
     <string name="lanjutkan">Lanjutkan</string>
+
+    <string name="searchbar_hint">Cari Course</string>
 </resources>

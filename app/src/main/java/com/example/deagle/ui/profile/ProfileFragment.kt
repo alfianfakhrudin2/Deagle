@@ -9,11 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.deagle.LoginActivity
 import com.example.deagle.R
 import com.example.deagle.databinding.FragmentProfileBinding
+import com.example.deagle.ui.SertifikatActivity
 import com.example.deagle.ui.kelas.ClassViewModel
 
 class ProfileFragment : Fragment() {
@@ -29,19 +31,23 @@ class ProfileFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         (activity as AppCompatActivity?)?.supportActionBar?.hide()
-        // TODO: Use the ViewModel
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val root: View = binding.root
 
+        // Mengatur tindakan klik pada tombol arrow
+        binding.arrow.setOnClickListener {
+            val intent = Intent(activity, SertifikatActivity::class.java)
+            startActivity(intent)
+        }
+
+        return root
     }
-//        TransactionsViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

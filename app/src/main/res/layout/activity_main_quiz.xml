@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainQuizActivity">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa yang dimaksud dengan \UI\ dalam desain UI/UX?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Interface" />
+
+        <RadioButton
+            android:id="@+id/rb_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Experience" />
+
+        <RadioButton
+            android:id="@+id/rb_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Management" />
+
+        <RadioButton
+            android:id="@+id/rb_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Analysis" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebelumnya"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>

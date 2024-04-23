@@ -9,7 +9,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.deagle.LoginActivity
 import com.example.deagle.R
 import com.example.deagle.databinding.ActivityOnboardingBinding
 
@@ -30,12 +29,10 @@ class OnboardingActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        setupView()
-
         binding.button.setOnClickListener {
             startActivity(Intent(this, StartActivity::class.java))
         }
+        setupView()
     }
 
     private fun setupView() {

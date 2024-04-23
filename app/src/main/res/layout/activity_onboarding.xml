@@ -176,7 +176,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@drawable/ic_circle"
-        app:tint="@color/black" />
+        app:tint="@color/primaryClr" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu2"
@@ -190,7 +190,7 @@
         app:layout_constraintTop_toTopOf="@+id/menu1"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle"
-        app:tint="@color/black" />
+        app:tint="@color/primaryClr" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu3"
@@ -204,7 +204,7 @@
         app:layout_constraintTop_toTopOf="@+id/menu2"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle"
-        app:tint="@color/black" />
+        app:tint="@color/primaryClr" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu4"
@@ -218,18 +218,20 @@
         app:layout_constraintTop_toTopOf="@+id/menu3"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle"
-        app:tint="@color/black" />
+        app:tint="@color/primaryClr" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:alpha="0"
         android:backgroundTint="@color/primaryClr"
-        android:text="@string/learn_now"
-        app:layout_constraintBottom_toTopOf="@+id/menu2"
+        android:text="Lanjutkan"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -239,6 +241,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img1" />
-
+        app:srcCompat="@drawable/img_kursus" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
