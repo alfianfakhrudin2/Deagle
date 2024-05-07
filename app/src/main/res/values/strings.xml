@@ -47,4 +47,6 @@
     <string name="lanjutkan">Lanjutkan</string>
 
     <string name="searchbar_hint">Cari Course</string>
+    <string name="beli_kelas"> <strike>Beli Kelas</strike></string>
+    <string name="title_quiz_lapor_soal">Apa yang dimaksud dengan UI dalam desain \nUI/UX?</string>
 </resources>

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.BatalActivity">
+    tools:context=".ui.TandaiActivity">
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="wrap_content"
@@ -80,8 +80,8 @@
             android:fontFamily="@font/font_1"
             android:textStyle="bold"
             android:padding="5dp"
-            android:background="@drawable/bg_rounded"
-            android:textColor="@color/primaryClr"
+            android:background="@drawable/bg_khrsus"
+            android:textColor="@color/fonts"
             android:textSize="11sp"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
@@ -244,9 +244,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_btn"
-        android:text="Batal  Penandaan Sudah Dibaca"
-        android:textColor="@color/red"
+        android:background="@drawable/bg_rounded"
+        android:text="Tandai Sudah Dibaca"
+        android:textColor="@color/primaryClr"
         android:fontFamily="@font/font_1"
         android:textStyle="bold"
         android:textSize="14dp"
