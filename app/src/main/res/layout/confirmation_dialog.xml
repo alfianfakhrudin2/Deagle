@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="48dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+
+    <TextView
+        style="@style/Deagle.Text.Title.Large"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Yakin Ingin Memulai?"
+        android:lines="2"
+        android:singleLine="false"
+        android:textAlignment="center"/>
+
+    <TextView
+        style="@style/Deagle.Text.Body.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Konfirmasi jika ingin memulai mengerjakan"
+        android:textColor="?attr/colorOnBackground"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/yes_button"
+        style="@style/Deagle.Text.Title.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cornerRadius="8dp"
+        android:text="Ya"
+        android:textColor="?attr/colorOnPrimary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/no_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textAppearance="@style/Deagle.Text.Title.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        app:strokeColor="?attr/colorPrimary"
+        android:text="Tidak" />
+</LinearLayout>
