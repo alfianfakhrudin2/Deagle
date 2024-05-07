@@ -47,4 +47,7 @@
     <string name="lanjutkan">Lanjutkan</string>
 
     <string name="searchbar_hint">Cari Course</string>
+    <string name="kelas_saya">Kelas Saya</string>
+    <string name="kelas_favorite">Kelas Favorit</string>
+    <string name="banner_class">Banner Class</string>
 </resources>

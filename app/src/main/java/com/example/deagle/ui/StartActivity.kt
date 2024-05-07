@@ -18,7 +18,7 @@ class StartActivity : AppCompatActivity() {
         binding = ActivityStartBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(binding.root)
+        setContentView(R.layout.fragment_quiz)
         supportActionBar?.hide()
         binding.WelcomeButton .setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
