@@ -11,4 +11,6 @@
     <color name="fonts">#464646</color>
     <color name="red">#FF0000</color>
     <color name="desc">#3A3F3E</color>
+    <color name="green_500">#FF09AD7C</color>
+    <color name="grey_500">#FFECE2E2</color>
 </resources>
