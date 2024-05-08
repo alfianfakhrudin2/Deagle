@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Deagle"
         tools:targetApi="31">
         <activity
+            android:name=".ui.kelas.detail.ClassDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.BatalActivity"
             android:exported="false" />
         <activity
