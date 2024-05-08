@@ -7,32 +7,31 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="375dp"
+        android:layout_height="312dp"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/logo"
-        app:layout_constraintBottom_toTopOf="@+id/titleTextViewWelcome"
+        android:src="@drawable/img_start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_start" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/titleTextViewWelcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/font_1"
         android:text="@string/title_start"
-        android:textSize="24sp"
         android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -52,13 +51,14 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/WelcomeButton"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
         android:layout_marginTop="52dp"
         android:backgroundTint="@color/primaryClr"
         android:fontFamily="@font/font_1"
         android:background="@drawable/bg_dialog"
         android:text="@string/login"
+        android:textSize="14sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,11 +66,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signupButton"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
         android:background="@drawable/bg_rounded"
         android:fontFamily="@font/font_1"
         android:text="@string/signup"
+        android:textSize="14sp"
         android:textColor="@color/primaryClr"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,18 +82,11 @@
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontal"
         android:layout_width="wrap_content"
-        android:layout_height="64dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.5006784"
+        app:layout_constraintGuide_begin="301dp"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="64dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,11 +22,6 @@
         <activity
             android:name=".ui.LaporSoalActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.DetailHasilActivity"
@@ -42,7 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.UlasanMentorActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".ui.DetailKelasSayaActivity"
             android:exported="false" />
@@ -91,7 +86,11 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

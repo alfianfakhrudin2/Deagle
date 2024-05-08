@@ -14,7 +14,7 @@
         android:id="@+id/imageViewBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="27dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,9 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_1"
+        android:fontFamily="@font/font_1"
         android:text="Kode Verifikasi"
         android:layout_marginTop="50dp"
+        android:layout_marginStart="38dp"
         android:textSize="24sp"
+        android:paddingStart="10dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewBack" />
@@ -38,8 +41,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/font_1"
+        android:layout_marginStart="38dp"
         android:text="@string/deskripsi_verifikasi"
-        android:textSize="14sp"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title_verifikasi" />
 
@@ -55,77 +60,88 @@
 
         <EditText
             android:id="@+id/editTextOTP1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_rounded"
             android:inputType="number"
             android:maxLength="1"
             android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextOTP2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="8dp"
             android:inputType="number"
+            android:background="@drawable/bg_verif"
             android:maxLength="1"
             android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextOTP3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_verif"
             android:inputType="number"
             android:maxLength="1"
             android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextOTP4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="8dp"
             android:inputType="number"
+            android:background="@drawable/bg_verif"
             android:maxLength="1"
             android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextOTP5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="8dp"
             android:inputType="number"
+            android:background="@drawable/bg_verif"
             android:maxLength="1"
             android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextOTP6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:inputType="number"
+            android:background="@drawable/bg_verif"
             android:maxLength="1"
             android:textAlignment="center" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="18dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/font_1"
         android:text="Kirim ulang kode dalam 0:59"
         android:textColor="@color/primaryClr"
+        android:layout_marginStart="29dp"
+        android:paddingStart="15dp"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_verifikasi" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_kirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="40dp"
         android:backgroundTint="@color/primaryClr"
         android:fontFamily="@font/font_1"
         android:text="Kirim"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:background="@drawable/bg_dialog"
         android:layout_marginTop="15dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

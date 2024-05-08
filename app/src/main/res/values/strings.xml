@@ -43,7 +43,7 @@
     <string name="kursus_deagle">Kursus <font color="#09AD7C">Deagle</font></string>
     <string name="ui_ux_design_mastery">UI/UX Design Mastery</string>
     <string name="sertifikat_saya">Sertifikat Saya</string>
-    <string name="deskripsi_verifikasi">Kami telah mengirimkan kode ke nomor \n083543131129</string>
+    <string name="deskripsi_verifikasi">Kami telah mengirimkan kode ke nomor \n<font color="#09AD7C">083543131129</font></string>
     <string name="lanjutkan">Lanjutkan</string>
     <string name="searchbar_hint">Cari Course</string>
     <string name="beli_kelas"> <strike>Beli Kelas</strike></string>

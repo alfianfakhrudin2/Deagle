@@ -40,8 +40,9 @@
             android:layout_marginEnd="32dp"
             android:fontFamily="@font/font_1"
             android:text="@string/regist"
-            android:textColor="@color/black"
+            android:textColor="#464646"
             android:textSize="13sp"
+            android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -51,11 +52,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="54dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_dialog"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleTextViewLogin">
@@ -67,6 +69,8 @@
                 android:ems="10"
                 android:fontFamily="@font/font_1"
                 android:hint="@string/username"
+                android:textColor="#878787"
+                android:textSize="12sp"
                 android:inputType="text"
                 tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -74,8 +78,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="54dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
@@ -89,30 +93,18 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:fontFamily="@font/font_1"
-
+                android:textColor="#878787"
+                android:textSize="12sp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--    <TextView-->
-        <!--        android:id="@+id/passwordTextView"-->
-        <!--        android:layout_width="wrap_content"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        android:layout_marginStart="32dp"-->
-        <!--        android:layout_marginTop="15dp"-->
-        <!--        android:alpha="0"-->
-        <!--        android:text="Password"-->
-        <!--        android:textColor="@color/black"-->
-        <!--        app:layout_constraintStart_toStartOf="parent"-->
-        <!--        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"-->
-        <!--        tools:alpha="100" />-->
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="54dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
@@ -128,6 +120,8 @@
                 android:ems="10"
                 android:fontFamily="@font/font_1"
                 android:hint="@string/password"
+                android:textColor="#878787"
+                android:textSize="12sp"
                 android:inputType="textPassword"
                 tools:alpha="100"
                 tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
@@ -136,8 +130,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/idEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="54dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
@@ -154,16 +148,18 @@
                 android:fontFamily="@font/font_1"
                 android:hint="@string/cPassword"
                 android:inputType="number"
-                tools:alpha="100"
-                tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
+                android:textColor="#878787"
+                android:textSize="12sp"
+                tools:alpha="100" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="13dp"
+            android:textSize="12dp"
             android:fontFamily="@font/font_1"
             android:text="Saya setuju dan menerima kebijakan \n yang berlaku"
             android:textColor="@color/black"
@@ -177,6 +173,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/bg_dialog"
             android:backgroundTint="@color/primaryClr"
             android:fontFamily="@font/font_1"
             android:text="@string/signup"
@@ -206,35 +203,6 @@
             app:layout_constraintGuide_percent="0.02"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/login_signup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signupButton">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_1"
-                android:text="have Account?" />
-
-            <TextView
-                android:id="@+id/txt_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_1"
-                android:paddingStart="5dp"
-                android:text="login"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

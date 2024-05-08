@@ -22,9 +22,7 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(Intent(this, VerifikasiActivity::class.java))
         }
 
-        binding.txtLogin.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
+
         supportActionBar?.hide()
     }
 }
