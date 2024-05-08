@@ -10,6 +10,7 @@ import com.example.deagle.LoginActivity
 import com.example.deagle.R
 import com.example.deagle.databinding.ActivityOnboardingBinding
 import com.example.deagle.databinding.ActivityStartBinding
+import com.example.deagle.ui.kelas.detail.ClassDetailActivity
 
 class StartActivity : AppCompatActivity() {
 
@@ -22,6 +23,7 @@ class StartActivity : AppCompatActivity() {
         supportActionBar?.hide()
         binding.WelcomeButton .setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+//            startActivity(Intent(this, ClassDetailActivity::class.java))
         }
 
         binding.signupButton.setOnClickListener {

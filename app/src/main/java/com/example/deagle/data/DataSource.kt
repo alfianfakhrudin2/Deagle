@@ -244,8 +244,8 @@ object DataSource {
             workingTime = "30 Menit",
             deadline = "28 November 2023",
             isFinished = true,
-            statusIcon = null,
-            finishDate = "27 November 2023 08:00:12",
+            statusIcon = R.drawable.bill_icon,
+            finishDate = "08:00",
             questions = listOf(
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",

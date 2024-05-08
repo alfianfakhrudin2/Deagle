@@ -17,6 +17,8 @@
         android:theme="@style/Theme.Deagle"
         tools:targetApi="31">
         <activity
+            android:name=".ui.kelas.detail.ClassDetailActivity"
+
             android:name=".ui.DetailLaporanSoalActivity"
             android:exported="false" />
         <activity
@@ -48,6 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.TandaiActivity"
+
             android:exported="false" />
         <activity
             android:name=".ui.BatalActivity"

@@ -27,17 +27,123 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
-    <include
-        android:id="@+id/class_material_card"
-        layout="@layout/class_material_item"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/task_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/app_bar_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout"
+        app:strokeColor="@color/grey_500"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:id="@+id/class_material_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/bill_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/class_material_title_text"
+                style="@style/Deagle.Text.Title.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Design Thinking"
+                android:textColor="?attr/colorOnSurface"
+                app:layout_constraintEnd_toStartOf="@+id/class_material_detail_icon"
+                app:layout_constraintStart_toEndOf="@id/class_material_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/class_material_status_finished_text"
+                style="@style/Deagle.Text.Label.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/text_border"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="2dp"
+                android:text="Selesai"
+                android:textColor="?attr/colorPrimary"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/class_material_title_text"
+                app:layout_constraintTop_toBottomOf="@id/class_material_title_text" />
+
+
+            <TextView
+                android:id="@+id/class_material_deadline_finished_text"
+                style="@style/Deagle.Text.Label.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/text_border"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="2dp"
+                android:text="08:00"
+                android:textColor="?attr/colorPrimary"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/class_material_status_finished_text"
+                app:layout_constraintStart_toEndOf="@+id/class_material_status_finished_text"
+                app:layout_constraintTop_toTopOf="@+id/class_material_status_finished_text" />
+
+            <TextView
+                android:id="@+id/class_material_status_text"
+                style="@style/Deagle.Text.Body.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Batas Waktu"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@id/class_material_title_text"
+                app:layout_constraintTop_toBottomOf="@id/class_material_title_text" />
+
+            <ImageView
+                android:id="@+id/class_material_status_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:contentDescription="@null"
+                android:src="@drawable/schedule_icon"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/class_material_status_text"
+                app:layout_constraintStart_toEndOf="@+id/class_material_status_text"
+                app:layout_constraintTop_toTopOf="@+id/class_material_status_text" />
+
+            <TextView
+                android:id="@+id/class_material_deadline_text"
+                style="@style/Deagle.Text.Label.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="27 Oktober 2023"
+                android:textColor="?attr/colorOnSurface"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/class_material_status_text"
+                app:layout_constraintStart_toEndOf="@+id/class_material_status_icon"
+                app:layout_constraintTop_toTopOf="@+id/class_material_status_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/description"
@@ -50,7 +156,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/class_material_card" />
+        app:layout_constraintTop_toBottomOf="@+id/task_card" />
 
     <TextView
         android:id="@+id/description_text"
