@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Deagle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Deagle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/green_500</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -23,13 +23,13 @@
         <item name="android:textSize">20sp</item>
         <item name="lineHeight">28sp</item>
     </style>
-    
+
     <style name="Deagle.Text.Title.Medium" parent="TextAppearance.Material3.TitleMedium">
         <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">18sp</item>
         <item name="lineHeight">24sp</item>
     </style>
-    
+
     <style name="Deagle.Text.Title.Small" parent="TextAppearance.Material3.TitleSmall">
         <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">14sp</item>
@@ -48,7 +48,7 @@
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">20sp</item>
     </style>
-    
+
     <style name="Deagle.Text.Body.Small" parent="TextAppearance.Material3.BodySmall">
         <item name="fontFamily">@font/poppins_regular</item>
         <item name="android:textSize">12sp</item>

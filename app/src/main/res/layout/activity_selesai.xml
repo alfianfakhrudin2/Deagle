@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SelesaiActivity">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:text="Kerja Bagus!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_selesai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Anda telah menyelesaikan \nlatihan soal ini dengan baik."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_selesai" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Nilai"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font_1"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80.00"
+        android:textColor="@color/primaryClr"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_1"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hasil" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lihat Detail Hasil"
+        android:backgroundTint="@color/primaryClr"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font_1"
+        android:background="@drawable/bg_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font_1"
+        android:text="Keluar"
+        android:background="@drawable/bg_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

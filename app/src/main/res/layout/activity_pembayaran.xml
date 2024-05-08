@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PembayaranActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/csMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font_1"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/textViewTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewTitle" />
+
+            <!-- Garis Bawah -->
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/csInfoPembayaran"
+                android:layout_width="370dp"
+                android:layout_height="110dp"
+                android:background="@drawable/bg_khrsus"
+                app:layout_constraintTop_toBottomOf="@id/viewLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txt_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_1"
+                    android:text="Detail Pembayaran"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/font_1"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_course" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_1"
+                    android:text="Rp 120.000"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_course"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_course" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_1"
+                    android:text="Rp 120.000"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_1"
+                android:text="Pilih Metode Pembayaran"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/csInfoPembayaran" />
+
+            <LinearLayout
+                android:id="@+id/llButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/csInfoPembayaran"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPilih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pilih"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/primaryClr"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    style="@style/Widget.Material3.Button.Icon"
+                    app:icon="@drawable/ic_up_arrow"
+                    app:iconGravity="end" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:fontFamily="@font/font_1"
+                android:layout_marginTop="29dp"
+                android:text="Transfer Bank / M-Banking"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <RadioGroup
+                android:id="@+id/ewallet_rg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_">
+
+                <RadioButton
+                    android:id="@+id/gopay_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/img_gopay"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="Gopay"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/dana_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/img_dana"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="Dana"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/linkaja_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/img_linkaja"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="LinkAja"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/shopeepay_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/img_spay"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="ShopeePay"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:fontFamily="@font/font_1"
+                android:layout_marginTop="20dp"
+                android:text="E-Wallet"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quiz_answer_rg" />
+
+            <RadioGroup
+                android:id="@+id/quiz_answer_rg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_transfer">
+
+                <RadioButton
+                    android:id="@+id/answer_a_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/img_bri"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="BRI"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/answer_b_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/img_mandiri"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="Mandiri"
+                    android:textColor="@color/black"  />
+
+                <RadioButton
+                    android:id="@+id/answer_c_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:drawableStart="@drawable/img_bni"
+                    android:button="@android:color/transparent"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="BNI"
+                    android:textColor="@color/black"  />
+
+                <RadioButton
+                    android:id="@+id/answer_d_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_unselected_bg"
+                    android:drawableStart="@drawable/img_bca"
+                    android:button="@android:color/transparent"
+                    android:drawableEnd="@drawable/payment_choice_bg"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="BCA"
+                    android:textColor="@color/black"  />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_lanjut_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog"
+                android:backgroundTint="@color/primaryClr"
+                android:text="Bayar"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ewallet_rg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
