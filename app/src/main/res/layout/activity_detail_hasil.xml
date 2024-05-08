@@ -7,17 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.DetailHasilActivity">
 
-
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quix\nApa itu UI/UX?"
+        style="@style/Deagle.Text.Title.Small"
+        android:textColor="?attr/colorOnSurface"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold"
         android:fontFamily="@font/font_1"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,91 +39,269 @@
         android:id="@+id/viewLine"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clSchedule"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_khrsus"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="16dp"
-        android:paddingTop="9dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="9dp"
-        app:layout_constraintTop_toBottomOf="@+id/viewLine"
-        tools:layout_editor_absoluteX="20dp">
-        <!-- Foto -->
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_warning"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- Deskripsi -->
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@id/imageView"
-            android:text="Lapor jika  ada kesalahan soal"
-            android:fontFamily="@font/font_1"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginEnd="5dp"
-            android:src="@drawable/ic_right"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/font_1"
-        android:text="@string/title_quiz_lapor_soal"
-        android:textColor="@color/black"
-        android:textSize="14sp"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clSchedule" />
+        app:layout_constraintTop_toBottomOf="@+id/viewLine"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        tools:layout_editor_absoluteX="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mentor_member_info_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                app:elevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/textView33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardCornerRadius="5dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/grey_500">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:orientation="horizontal">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/mentor_member_info_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_warning"
+                        android:contentDescription="@null"
+                        app:tint="#09AD7C"/>
+
+                    <TextView
+                        android:id="@+id/mentor_member_info_text"
+                        style="@style/Deagle.Text.Label.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/black"
+                        android:text="Lapor jika  ada kesalahan soal"/>
+
+                    <ImageView
+                        android:id="@+id/mentor_member_info_detail_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_icon"
+                        android:contentDescription="@null"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textView33"
+                style="@style/Deagle.Text.Body.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/font_1"
+                android:text="@string/title_quiz_lapor_soal"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/quiz_answer_rg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_goneMarginTop="20dp"
+                android:paddingHorizontal="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mentor_member_info_card">
+
+                <RadioButton
+                    android:id="@+id/answer_a_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:drawableStart="@drawable/a_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Interface"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_b_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/b_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Experience"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_c_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/c_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Management"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_d_rb"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/d_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Analysis"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                style="@style/Deagle.Text.Body.Small"
+                android:fontFamily="@font/font_1"
+                android:text="Jawaban benar adalah “A”, User Interface"
+                android:textColor="@color/primaryClr"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quiz_answer_rg" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/Deagle.Text.Body.Small"
+                android:fontFamily="@font/font_1"
+                android:text="Apa yang dimaksud dengan “UX” dalam \ndesain UI/UX?"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <RadioGroup
+                android:id="@+id/quiz_answer_incorrect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35"
+                app:layout_goneMarginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/answer_a_rb_incorrect"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/a_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Interface"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_b_rb_incorrect"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/b_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Experience"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_c_rb_incorrect"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_selected_error_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:drawableStart="@drawable/c_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Management"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+                <RadioButton
+                    android:id="@+id/answer_d_rb_incorrect"
+                    style="@style/Deagle.Text.Body.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/quiz_answer_bg"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/d_unselected_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:text="User Analysis"
+                    android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

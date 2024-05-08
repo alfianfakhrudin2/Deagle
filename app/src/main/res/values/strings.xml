@@ -25,7 +25,7 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="logo">logo login</string>
-    <string name="login">Masuk ke akun Anda</string>
+    <string name="login">Login</string>
     <string name="forget_password">lupa password?</string>
     <string name="loginBtn">Login</string>
     <string name="cPassword">Confirm Password</string>
@@ -35,7 +35,7 @@
     <string name="sudahbayar">Sudah dibayar</string>
     <string name="belumbayar">Belum dibayar</string>
     <string name="username">Nama Pengguna</string>
-    <string name="signup">Signup</string>
+    <string name="signup">Daftar</string>
     <string name="desc_start">Mulai perjalanmu bersama <font color="#09AD7C">Deagle</font>. Yakinkanlah pada dirimu bahwa konsisten adalah kunci dari tercapainya tujuan yang kamu inginkan</string>
     <string name="title_start">Mulai Perjalananmu</string>
     <string name="name">Hai, Ahmad</string>
@@ -45,13 +45,24 @@
     <string name="sertifikat_saya">Sertifikat Saya</string>
     <string name="deskripsi_verifikasi">Kami telah mengirimkan kode ke nomor \n083543131129</string>
     <string name="lanjutkan">Lanjutkan</string>
-
     <string name="searchbar_hint">Cari Course</string>
     <string name="beli_kelas"> <strike>Beli Kelas</strike></string>
     <string name="title_quiz_lapor_soal">Apa yang dimaksud dengan UI dalam desain \nUI/UX?</string>
-
     <string name="kelas_saya">Kelas Saya</string>
     <string name="kelas_favorite">Kelas Favorit</string>
     <string name="banner_class">Banner Class</string>
+    <string name="tata_cara_pelaporan">Tata Cara Pelaporan</string>
+
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="desc_laporan_soal">• Screenshoot soal yang sekiranya ada \n kesalahan atau ambigu\n • Isi kolom deskripsi dengan bahasa yang \n mudah dimengerti\n • Upload screenshoot soal</string>
+    <string name="desc_balasan">Yang benar jawabannya User Experience ya \nkak, kakak bisa coba googling. Karena tidak \nada kesalahan soal, nilai kakak tidak ada \npenambahan maupun pengurangan. \nTerimakasih sudah mau melapor, semoga \nsehat selalu :)</string>
+    <string name="_4_5_soal"><b><font color="#000000">4</font></b> / 5 soal</string>
+
+
+    <string-array name="data_photo">
+        <item>@drawable/baner1</item>
+        <item>@drawable/baner2</item>
+        <item>@drawable/baner3</item>
+    </string-array>
 
 </resources>

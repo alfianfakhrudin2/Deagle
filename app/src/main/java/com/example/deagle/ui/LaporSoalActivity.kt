@@ -5,22 +5,24 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.deagle.R
 
-class UlasanMentorActivity : AppCompatActivity() {
+class LaporSoalActivity : AppCompatActivity() {
 
     private val PICK_IMAGE_REQUEST = 1
     private lateinit var btnKirim: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ulasan_mentor)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_lapor_soal)
         supportActionBar?.hide()
+
         val btnSelectImage = findViewById<TextView>(R.id.btnSelectImage)
         btnKirim = findViewById(R.id.btnKirim)
         btnKirim.isEnabled = false // Menonaktifkan tombol btnKirim saat pertama kali
@@ -70,5 +72,3 @@ class UlasanMentorActivity : AppCompatActivity() {
         return result
     }
 }
-
-

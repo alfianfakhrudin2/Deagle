@@ -1,21 +1,37 @@
 package com.example.deagle.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.deagle.R
+import com.example.deagle.databinding.ActivityPembayaranBinding
 
 class PembayaranActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityPembayaranBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityPembayaranBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pembayaran)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(binding.root)
+        supportActionBar?.hide()
+
+        binding.btnLanjutPembayaran.setOnClickListener {
+            val intent = Intent(this, BayarActivity::class.java)
+            startActivity(intent)
         }
+
+        binding.imageViewBack.setOnClickListener {
+            onBackPressed()
+        }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        super.onBackPressed()
+        // Kembali ke fragment profile dengan menutup aktivitas SertifikatActivity
+        finish()
     }
 }
