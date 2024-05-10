@@ -16,48 +16,48 @@ object DataSource {
             finishDate = null,
             questions = listOf(
                 Question(
-                    question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
+                    question = "Apa yang dimaksud dengan \"UI\" dalam desain UI/UX? usdufsdf",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
-                    question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
+                    question = "Apa yang dimaksud dengan layout?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "Tata letak antar elemen UI", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
-                    question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
+                    question = "Apa tools UI/UX yang sedang populer sekarang?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "Figma", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "Penpot", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "Adobe XD", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "Sketch", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
-                    question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
+                    question = "Apa yang dimaksud dengan \"UI\" dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
-                    question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
+                    question = "Apa yang dimaksud dengan \"UI\" dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 )
             )
@@ -76,46 +76,46 @@ object DataSource {
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 )
             )
@@ -134,46 +134,46 @@ object DataSource {
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 )
             )
@@ -192,46 +192,46 @@ object DataSource {
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 )
             )
@@ -250,46 +250,46 @@ object DataSource {
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 ),
                 Question(
                     question = "Apa yang dimaksud dengan &quot;UI&quot; dalam desain UI/UX?",
                     answers = listOf(
-                        Answer(answer = "User Interface", isSelected = false),
-                        Answer(answer = "User Experience", isSelected = false),
-                        Answer(answer = "User Management", isSelected = false),
-                        Answer(answer = "User Analysis", isSelected = false)
+                        Answer(answer = "User Interface", isSelected = false, isRightAnswer = true),
+                        Answer(answer = "User Experience", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Management", isSelected = false, isRightAnswer = false),
+                        Answer(answer = "User Analysis", isSelected = false, isRightAnswer = false)
                     )
                 )
             )
