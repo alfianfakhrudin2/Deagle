@@ -25,7 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_1"
-        android:fontFamily="@font/font_1"
         android:text="Kode Verifikasi"
         android:layout_marginTop="50dp"
         android:layout_marginStart="38dp"

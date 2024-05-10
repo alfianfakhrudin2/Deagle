@@ -33,12 +33,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="32dp"
             android:fontFamily="@font/font_1"
             android:text="@string/login"
-            android:textColor="@color/black"
-            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="#464646"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -48,10 +49,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,29 +64,19 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:fontFamily="@font/font_1"
+                android:background="@drawable/bg_inputtext"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/passwordTextView"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginStart="32dp"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:text="Password"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout" />-->
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="32dp"
             app:endIconMode="password_toggle"
             app:layout_constraintEnd_toEndOf="parent"
@@ -95,9 +86,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/font_1"
+                android:background="@drawable/bg_inputtext"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
@@ -108,25 +99,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="33dp"
             android:paddingStart="2dp"
+            android:paddingEnd="10dp"
             android:fontFamily="@font/font_1"
             android:text="@string/forget_password"
             android:textColor="@color/primaryClr"
-            android:textSize="13sp"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
 
         <Button
             android:id="@+id/loginButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="326dp"
+            android:layout_height="40dp"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/primaryClr"
             android:fontFamily="@font/font_1"
             android:text="@string/loginBtn"
+            android:background="@drawable/bg_dialog"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="18sp"

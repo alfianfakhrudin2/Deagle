@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Deagle</string>
-    <string name="title_home">Home</string>
-    <string name="title_search">Search</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_search">Cari</string>
     <string name="title_class">Kelas</string>
     <string name="title_transaksi">Transaksi</string>
     <string name="title_profile">Profil</string>
@@ -23,10 +23,10 @@
     <string name="desc_menu_5">Sebelum memulai, pastikan jaringan internet kamu lancar, agar proses belajar dan penerapan materi bisa maksimal</string>
     <string name="learn_now">Belajar Sekarang</string>
     <string name="password">Password</string>
-    <string name="email">Email</string>
+    <string name="email">Email/NoTelp</string>
     <string name="logo">logo login</string>
-    <string name="login">Login</string>
-    <string name="forget_password">lupa password?</string>
+    <string name="login">Masuk ke akun anda</string>
+    <string name="forget_password">Lupa password?</string>
     <string name="loginBtn">Login</string>
     <string name="cPassword">Confirm Password</string>
     <string name="regist">Daftarkan Akun Anda</string>
@@ -46,7 +46,7 @@
     <string name="deskripsi_verifikasi">Kami telah mengirimkan kode ke nomor \n<font color="#09AD7C">083543131129</font></string>
     <string name="lanjutkan">Lanjutkan</string>
     <string name="searchbar_hint">Cari Course</string>
-    <string name="beli_kelas"> <strike>Beli Kelas</strike></string>
+    <string name="beli_kelas"> <strike>Rp 150.000</strike></string>
     <string name="title_quiz_lapor_soal">Apa yang dimaksud dengan UI dalam desain \nUI/UX?</string>
     <string name="kelas_saya">Kelas Saya</string>
     <string name="kelas_favorite">Kelas Favorit</string>
@@ -64,5 +64,42 @@
         <item>@drawable/baner2</item>
         <item>@drawable/baner3</item>
     </string-array>
+
+    <string-array name="data_khursus_photo">
+        <item>@drawable/iv_khrsus</item>
+        <item>@drawable/iv_khursus2</item>
+        <item>@drawable/iv_khursus3</item>
+    </string-array>
+
+    <string-array name="data_khursus_title">
+        <item>UI/UX Design Mastery</item>
+        <item>Web Development</item>
+        <item>Data Analyst</item>
+    </string-array>
+
+    <string-array name="data_khursus_desc">
+        <item>Mengajarkan tentang prinsip-prinsip desain...</item>
+        <item>Memberikan bimbingan dalam pembuatan web... </item>
+        <item>Mengajarkan Bagaimana caranya menganalisis data...</item>
+    </string-array>
+
+    <string-array name="data_harga_khursus">
+        <item>Rp 120.000</item>
+        <item>Rp 100.000</item>
+        <item>Rp 110.000</item>
+    </string-array>
+
+    <string name="screen1">Berbagai Kategori Kelas</string>
+    <string name="screen2">Mentor</string>
+    <string name="screen3">Uji Kompetensi</string>
+    <string name="screen4">Sertifikat</string>
+    <string name="screen5">Jaringan Internet</string>
+
+    <string name="screen1desc">Tersedia berbagai kategori kelas, sesuai minat kamu, untuk membantumu meningkatkan skill digital</string>
+    <string name="screen2desc">Kamu akan dibimbing mentor yang berpengalaman dibidangnya. Ada juga fitur ulasan mentor untuk menyampaikan keluh kesahmu tentang kinerja mentor lho!</string>
+    <string name="screen3desc">Akan ada quiz-quiz untuk menguji pemahamanmu terkait materi. Menariknya, tersedia fitur lapor ketika kamu menjumpai kesalahan soal maupun jawaban</string>
+    <string name="screen4desc">Setelah berhasil menyelesaikan kelas, kamu akan diberi sertifikat yang tentunya bermanfaat untuk mendukung pencapaian karirmu</string>
+    <string name="screen5desc">Sebelum memulai, pastikan jaringan internet kamu lancar, agar proses belajar dan penerapan materi bisa maksimal</string>
+    <string name="rp_150_000"><strike>Rp 150.000</strike></string>
 
 </resources>

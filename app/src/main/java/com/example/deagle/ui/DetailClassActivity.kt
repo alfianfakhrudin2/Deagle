@@ -17,9 +17,6 @@ class DetailClassActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.imageViewBack.setOnClickListener {
-            onBackPressed()
-        }
     }
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {

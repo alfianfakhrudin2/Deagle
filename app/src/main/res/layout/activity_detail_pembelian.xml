@@ -145,8 +145,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -164,10 +163,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Rp 120.000"
             android:textColor="@color/primaryClr"
-            android:textSize="15sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -175,11 +174,11 @@
             android:id="@+id/textView25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Harga"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/textView23"
             app:layout_constraintTop_toTopOf="parent" />
 

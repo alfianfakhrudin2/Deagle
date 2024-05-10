@@ -39,7 +39,7 @@ class DetailPembelianActivity : AppCompatActivity() {
         mList.add(
             LanguageData(
                 "Materi Pembelajaran",
-                R.drawable.poto,
+                R.drawable.poto1,
                 "Kelas ini dirancang untuk membawa Anda melintasi dunia desain UI/UX yang menarik dan dinamis. Dengan fokus pada pengalaman pengguna yang memikat, Anda akan dibimbing melalui berbagai konsep dan praktik terkini dalam merancang antarmuka yang intuitif dan menarik."
             )
         )

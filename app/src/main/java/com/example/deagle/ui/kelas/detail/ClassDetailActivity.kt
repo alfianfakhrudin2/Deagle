@@ -21,16 +21,15 @@ class ClassDetailActivity() : AppCompatActivity() {
 //        }
 
         // Calling Class Material Fragment
-        val fragmentManager = supportFragmentManager
-        val classMaterialFragment = ClassMaterialFragment()
-        val fragment = fragmentManager.findFragmentByTag(ClassMaterialFragment::class.java.simpleName)
-        if (fragment !is ClassMaterialFragment) {
-            fragmentManager.beginTransaction()
-                .add(R.id.class_detail_frame_container, classMaterialFragment, ClassMaterialFragment::class.java.simpleName)
-                .commit()
-        }
+//        val fragmentManager = supportFragmentManager
+//        val classDetailFragment = ClassDetailFragment()
+//        val fragment = fragmentManager.findFragmentByTag(ClassDetailFragment::class.java.simpleName)
+//        if (fragment !is ClassDetailFragment) {
+//            fragmentManager.beginTransaction()
+//                .add(R.id.class_detail_frame_container, classDetailFragment, ClassDetailFragment::class.java.simpleName)
+//                .commit()
+//        }
 
-        //Replace with Class Detail Fragment
     }
 
 

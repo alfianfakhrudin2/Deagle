@@ -33,7 +33,8 @@
                 android:layout_marginTop="10dp"
                 android:text="Ahmad"
                 android:fontFamily="@font/font_1"
-                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/profile_image" />
@@ -44,8 +45,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="ahmad@gmail.com"
+                android:textColor="@color/white"
                 android:fontFamily="@font/font_1"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -56,7 +58,8 @@
                 android:layout_marginTop="10dp"
                 android:text="0853543131129"
                 android:fontFamily="@font/font_1"
-                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/email" />
@@ -83,8 +86,8 @@
 
         <ImageView
             android:id="@+id/arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -93,8 +96,8 @@
 
         <ImageView
             android:id="@+id/ic_sertif"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/ic_sertfikat"
@@ -107,8 +110,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
+            android:textColor="#464646"
             android:text="@string/sertifikat_saya"
-            android:textSize="17sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_sertif"
             app:layout_constraintStart_toEndOf="@+id/ic_sertif"
             app:layout_constraintTop_toTopOf="@+id/ic_sertif" />
@@ -116,8 +120,8 @@
         <!-- kedua -->
         <ImageView
             android:id="@+id/arrow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_unduh"
@@ -126,8 +130,8 @@
 
         <ImageView
             android:id="@+id/ic_unduh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/ic_download"
@@ -140,16 +144,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
+            android:textColor="#464646"
             android:text="Unduhan"
-            android:textSize="17sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_unduh"
             app:layout_constraintStart_toEndOf="@+id/ic_unduh"
             app:layout_constraintTop_toTopOf="@+id/ic_unduh" />
 
         <ImageView
             android:id="@+id/arrow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_whislist"
@@ -158,8 +163,8 @@
 
         <ImageView
             android:id="@+id/ic_whislist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/fav_ic"
@@ -174,7 +179,8 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
             android:text="Whislist"
-            android:textSize="17sp"
+            android:textColor="#464646"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_whislist"
             app:layout_constraintStart_toEndOf="@+id/ic_whislist"
             app:layout_constraintTop_toTopOf="@+id/ic_whislist" />
@@ -193,8 +199,8 @@
 
         <ImageView
             android:id="@+id/arrow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_informasi"
@@ -203,8 +209,8 @@
 
         <ImageView
             android:id="@+id/ic_informasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/ic_account"
@@ -218,15 +224,16 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
             android:text="Informasi Pengguna"
-            android:textSize="17sp"
+            android:textColor="#464646"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_informasi"
             app:layout_constraintStart_toEndOf="@+id/ic_informasi"
             app:layout_constraintTop_toTopOf="@+id/ic_informasi" />
 
         <ImageView
             android:id="@+id/arrow5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_language"
@@ -235,8 +242,8 @@
 
         <ImageView
             android:id="@+id/ic_language"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/ic_language"
@@ -249,16 +256,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
+            android:textColor="#464646"
             android:text="Preferensi Bahasa"
-            android:textSize="17sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_language"
             app:layout_constraintStart_toEndOf="@+id/ic_language"
             app:layout_constraintTop_toTopOf="@+id/ic_language" />
 
         <ImageView
             android:id="@+id/arrow6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_right"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_sandi"
@@ -267,8 +275,8 @@
 
         <ImageView
             android:id="@+id/ic_sandi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/ic_lock"
@@ -281,24 +289,26 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/font_1"
+            android:textColor="#464646"
             android:text="Ganti Kata Sandi"
-            android:textSize="17sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/ic_sandi"
             app:layout_constraintStart_toEndOf="@+id/ic_sandi"
             app:layout_constraintTop_toTopOf="@+id/ic_sandi" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signupButton"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
+            android:layout_width="326dp"
+            android:layout_height="40dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:backgroundTint="@color/primaryClr"
             android:layout_marginTop="26dp"
+            android:background="@drawable/bg_dialog"
             android:fontFamily="@font/font_1"
             android:text="Logout"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ic_sandi" />

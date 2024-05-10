@@ -2,6 +2,7 @@ package com.example.deagle.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,6 +22,14 @@ class PembayaranActivity : AppCompatActivity() {
         binding.btnLanjutPembayaran.setOnClickListener {
             val intent = Intent(this, BayarActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnPilih.setOnClickListener() {
+            if (binding.paymentOptionRg.visibility == View.VISIBLE) {
+                binding.paymentOptionRg.visibility = View.INVISIBLE
+            } else {
+                binding.paymentOptionRg.visibility = View.VISIBLE
+            }
         }
 
         binding.imageViewBack.setOnClickListener {
