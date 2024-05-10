@@ -5,17 +5,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager2.widget.ViewPager2
 import com.example.deagle.databinding.FragmentClassDetailBinding
-import com.example.deagle.ui.kelas.detail.adapter.ClassMaterialAdapter
+import com.example.deagle.ui.kelas.detail.adapter.ClassMaterialPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class ClassDetailFragment : Fragment() {
     private var _binding: FragmentClassDetailBinding? = null
-    private val binding = _binding!!
-    private lateinit var classMaterialAdapter: ClassMaterialAdapter
-
+    private val binding get() =  _binding!!
+    private lateinit var classMaterialPagerAdapter: ClassMaterialPagerAdapter
+    private val tabName = listOf(
+        "Jadwal",
+        "Materi",
+        "Tugas"
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,30 +32,11 @@ class ClassDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            classMaterialAdapter = ClassMaterialAdapter(requireParentFragment())
-            binding.classMaterialViewPager.adapter = classMaterialAdapter
-            classDetailTab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-                override fun onTabSelected(tab: TabLayout.Tab) {
-                    classMaterialViewPager.currentItem = tab.position
-                }
-
-                override fun onTabUnselected(p0: TabLayout.Tab?) {
-                    TODO("Not yet implemented")
-                }
-
-                override fun onTabReselected(p0: TabLayout.Tab?) {
-                    TODO("Not yet implemented")
-                }
-
-            })
-
-            classMaterialViewPager.registerOnPageChangeCallback(object :
-                ViewPager2.OnPageChangeCallback() {
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-                    binding.classDetailTab.getTabAt(position)?.select()
-                }
-            })
+            classMaterialPagerAdapter = ClassMaterialPagerAdapter(requireActivity())
+            classMaterialViewPager.adapter = classMaterialPagerAdapter
+            TabLayoutMediator(classDetailTab, classMaterialViewPager) { tab: TabLayout.Tab, position: Int ->
+                tab.text = tabName[position]
+            }.attach()
         }
     }
 

@@ -12,8 +12,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.deagle.R
 import com.example.deagle.data.DataSource
 import com.example.deagle.data.DeagleClassMaterial
+import com.example.deagle.data.Question
 import com.example.deagle.databinding.FragmentClassMaterialBinding
 import com.example.deagle.ui.kelas.detail.adapter.ClassMaterialRecyclerAdapter
+import java.util.ArrayList
 
 const val ARG_OBJECT = "object"
 
@@ -59,7 +61,9 @@ class ClassMaterialFragment : Fragment(), ClassMaterialRecyclerAdapter.OnItemCli
             putString(DCM_DEADLINE_KEY, deagleClassMaterial.deadline)
             putBoolean(DCM_IS_FINISHED_KEY, deagleClassMaterial.isFinished)
             deagleClassMaterial.statusIcon?.let { putInt(DCM_STATUS_ICON_KEY, it) }
-            putString(DCM_FINISHED_DATE_KEY, deagleClassMaterial.finishDate)
+
+            val questions: ArrayList<Question> = ArrayList(deagleClassMaterial.questions)
+            putParcelableArrayList(DCM_QUESTIONS_KEY, questions)
         }
 
         val classTaskFragment = ClassTaskFragment()
@@ -70,4 +74,6 @@ class ClassMaterialFragment : Fragment(), ClassMaterialRecyclerAdapter.OnItemCli
             .addToBackStack(null)
             .commit()
     }
+
+
 }
