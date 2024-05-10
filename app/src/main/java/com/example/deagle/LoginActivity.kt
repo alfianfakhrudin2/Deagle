@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.WindowManager
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -17,18 +18,20 @@ import com.example.deagle.ui.RegisterActivity
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
+    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(binding.root)
-        binding.loginButton.setOnClickListener {
-            // Menampilkan alert dialog
-            showSuccessAlertDialog()
-        }
 
         binding.txtSignup.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
+        }
+        binding.loginButton.setOnClickListener {
+            // Menampilkan alert dialog
+            showSuccessAlertDialog()
         }
         supportActionBar?.hide()
     }
@@ -38,9 +41,16 @@ class LoginActivity : AppCompatActivity() {
         val inflater = LayoutInflater.from(this)
         val view: View = inflater.inflate(R.layout.custom_dialog_login, null)
 
+        // Menentukan lebar dan tinggi dialog
+        val width = resources.displayMetrics.widthPixels * 0.3 // Misalnya, 80% dari lebar layar
+        val height = WindowManager.LayoutParams.WRAP_CONTENT // Tinggi sesuai dengan konten
+
         builder.setView(view)
 
-        val alertDialog: AlertDialog = builder.create()
+        val alertDialog = builder.create()
+
+        // Mengatur lebar dan tinggi dialog
+        alertDialog.window?.setLayout(width.toInt(), height)
 
         alertDialog.setCanceledOnTouchOutside(false)
 
@@ -54,4 +64,5 @@ class LoginActivity : AppCompatActivity() {
 
         alertDialog.show()
     }
+
 }

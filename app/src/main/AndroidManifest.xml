@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +18,39 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.kelas.detail.ClassDetailActivity"
+
+            android:name=".ui.DetailLaporanSoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LaporSoalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.DetailHasilActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ui.SelesaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BayarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UlasanMentorActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ui.DetailKelasSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TandaiActivity"
+
             android:exported="false" />
         <activity
             android:name=".ui.BatalActivity"
@@ -56,12 +93,8 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
