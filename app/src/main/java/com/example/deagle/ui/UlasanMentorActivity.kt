@@ -5,10 +5,13 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
+import android.view.LayoutInflater
 import android.view.View
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.deagle.R
 
@@ -29,6 +32,71 @@ class UlasanMentorActivity : AppCompatActivity() {
         btnSelectImage.setOnClickListener {
             openFileChooser()
         }
+        btnKirim.setOnClickListener {
+            showSuccessAlertDialog()
+        }
+
+
+    }
+
+    private fun showSuccessAlertDialog() {
+        val builder = AlertDialog.Builder(this)
+        val inflater = LayoutInflater.from(this)
+        val view: View = inflater.inflate(R.layout.ulasan_mentor_dialog, null)
+
+        val width = resources.displayMetrics.widthPixels * 0.3
+        val height = WindowManager.LayoutParams.WRAP_CONTENT
+
+        builder.setView(view)
+
+        val alertDialog = builder.create()
+
+        alertDialog.window?.setLayout(width.toInt(), height)
+
+        alertDialog.setCanceledOnTouchOutside(false)
+
+        val btnLanjutkanLogin = view.findViewById<Button>(R.id.yes_button_ulasan_mentor)
+        val btnNoUlasanMentor = view.findViewById<Button>(R.id.no_button_ulasan_mentor)
+
+        btnNoUlasanMentor.setOnClickListener {
+            alertDialog.dismiss()
+        }
+
+        btnNoUlasanMentor.setOnClickListener {
+            alertDialog.dismiss()
+        }
+
+        btnLanjutkanLogin.setOnClickListener {
+            alertDialog.dismiss()
+            showSecondDialog() // Navigasi ke dialog kedua
+        }
+
+        alertDialog.show()
+    }
+
+    private fun showSecondDialog() {
+        val builder = AlertDialog.Builder(this)
+        val inflater = LayoutInflater.from(this)
+        val view: View = inflater.inflate(R.layout.sukses_ulasan_mentor_dialog, null)
+
+        // Atur tampilan dan lainnya sesuai kebutuhan
+        builder.setView(view)
+
+        val alertDialog = builder.create()
+
+        // Atur ukuran dialog dan lainnya sesuai kebutuhan
+        alertDialog.setCanceledOnTouchOutside(false)
+
+        val btnRiwayatLaporanSoal = view.findViewById<Button>(R.id.kembali_button)
+
+        btnRiwayatLaporanSoal.setOnClickListener {
+            alertDialog.dismiss()
+            // Navigasi ke DetailLaporanSoalActivity saat btnRiwayat diklik
+            val intent = Intent(this, DetailKelasSayaActivity::class.java)
+            startActivity(intent)
+        }
+
+        alertDialog.show()
     }
 
     private fun openFileChooser() {

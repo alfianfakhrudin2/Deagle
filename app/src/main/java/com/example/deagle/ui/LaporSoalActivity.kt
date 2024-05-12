@@ -42,31 +42,6 @@ class LaporSoalActivity : AppCompatActivity() {
 
     }
 
-//    private fun showAlertDialog() {
-//        val builder = AlertDialog.Builder(this)
-//        val inflater = LayoutInflater.from(this)
-//        val view: View = inflater.inflate(R.layout.custome_lapor_soal_dialog, null)
-//
-//        val width = resources.displayMetrics.widthPixels * 0.3
-//        val height = WindowManager.LayoutParams.WRAP_CONTENT
-//
-//        builder.setView(view)
-//
-//        val alertDialog = builder.create()
-//
-//        alertDialog.window?.setLayout(width.toInt(), height)
-//
-//        alertDialog.setCanceledOnTouchOutside(false)
-//
-//        val btnLanjutkanLogin = view.findViewById<Button>(R.id.btnYa)
-//
-//        btnLanjutkanLogin.setOnClickListener {
-//            alertDialog.dismiss()
-//        }
-//
-//        alertDialog.show()
-//    }
-
     private fun showSuccessAlertDialog() {
         val builder = AlertDialog.Builder(this)
         val inflater = LayoutInflater.from(this)
