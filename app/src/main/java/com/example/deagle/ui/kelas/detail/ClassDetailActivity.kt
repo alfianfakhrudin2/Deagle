@@ -40,15 +40,13 @@ class ClassDetailActivity() : AppCompatActivity() {
         val fragment = fragmentManager.findFragmentByTag(ClassDetailFragment::class.java.simpleName)
         if (fragment !is ClassDetailFragment) {
             fragmentManager.beginTransaction()
-                .add(R.id.class_detail_frame_container, classDetailFragment, ClassDetailFragment::class.java.simpleName)
+                .add(
+                    R.id.class_detail_frame_container,
+                    classDetailFragment,
+                    ClassDetailFragment::class.java.simpleName
+                )
                 .commit()
         }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
     }
-
-
 }

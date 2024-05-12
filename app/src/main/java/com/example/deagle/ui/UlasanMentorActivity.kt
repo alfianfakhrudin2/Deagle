@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
@@ -23,11 +24,11 @@ class UlasanMentorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ulasan_mentor)
-        supportActionBar?.hide()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true) // Show back button in action bar
         val btnSelectImage = findViewById<TextView>(R.id.btnSelectImage)
         btnKirim = findViewById(R.id.btnKirim)
-        btnKirim.isEnabled = false // Menonaktifkan tombol btnKirim saat pertama kali
-        btnKirim.alpha = 0.5f // Mengatur transparansi tombol ketika dinonaktifkan
+        btnKirim.isEnabled = false
+        btnKirim.alpha = 0.5f
 
         btnSelectImage.setOnClickListener {
             openFileChooser()
@@ -35,8 +36,15 @@ class UlasanMentorActivity : AppCompatActivity() {
         btnKirim.setOnClickListener {
             showSuccessAlertDialog()
         }
+    }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar back button click here
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun showSuccessAlertDialog() {
@@ -62,13 +70,9 @@ class UlasanMentorActivity : AppCompatActivity() {
             alertDialog.dismiss()
         }
 
-        btnNoUlasanMentor.setOnClickListener {
-            alertDialog.dismiss()
-        }
-
         btnLanjutkanLogin.setOnClickListener {
             alertDialog.dismiss()
-            showSecondDialog() // Navigasi ke dialog kedua
+            showSecondDialog()
         }
 
         alertDialog.show()
@@ -79,19 +83,16 @@ class UlasanMentorActivity : AppCompatActivity() {
         val inflater = LayoutInflater.from(this)
         val view: View = inflater.inflate(R.layout.sukses_ulasan_mentor_dialog, null)
 
-        // Atur tampilan dan lainnya sesuai kebutuhan
         builder.setView(view)
 
         val alertDialog = builder.create()
 
-        // Atur ukuran dialog dan lainnya sesuai kebutuhan
         alertDialog.setCanceledOnTouchOutside(false)
 
         val btnRiwayatLaporanSoal = view.findViewById<Button>(R.id.kembali_button)
 
         btnRiwayatLaporanSoal.setOnClickListener {
             alertDialog.dismiss()
-            // Navigasi ke DetailLaporanSoalActivity saat btnRiwayat diklik
             val intent = Intent(this, DetailKelasSayaActivity::class.java)
             startActivity(intent)
         }
@@ -118,9 +119,8 @@ class UlasanMentorActivity : AppCompatActivity() {
                 btnSelectImage.text = fileName
                 Toast.makeText(this, "Nama file: $fileName", Toast.LENGTH_SHORT).show()
 
-                // Mengaktifkan tombol Kirim karena pengguna telah memilih file gambar
                 btnKirim.isEnabled = true
-                btnKirim.alpha = 1.0f // Mengembalikan transparansi tombol ke nilai awal
+                btnKirim.alpha = 1.0f
             } else {
                 Toast.makeText(this, "Nama file tidak ditemukan", Toast.LENGTH_SHORT).show()
             }
@@ -138,5 +138,3 @@ class UlasanMentorActivity : AppCompatActivity() {
         return result
     }
 }
-
-

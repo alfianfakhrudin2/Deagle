@@ -18,10 +18,7 @@ import com.example.deagle.ui.kelas.detail.DCM_QUESTIONS_KEY
 import com.example.deagle.ui.kelas.detail.DCM_TITLE_KEY
 import com.example.deagle.ui.kelas.detail.viewmodel.AnswerViewModel
 import com.example.deagle.ui.kelas.quiz.adapter.AnswerPagerAdapter
-<<<<<<< HEAD
 
-=======
->>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 
 const val DCM_QUESTION_KEY = "DCM_QUESTION_KEY"
 const val DCM_ANSWERS_KEY = "DCM_ANSWERS_KEY"
