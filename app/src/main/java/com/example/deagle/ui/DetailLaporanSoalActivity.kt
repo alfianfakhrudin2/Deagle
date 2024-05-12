@@ -28,6 +28,5 @@ class DetailLaporanSoalActivity : AppCompatActivity() {
             startActivity(Intent)
         }
 
-
     }
 }

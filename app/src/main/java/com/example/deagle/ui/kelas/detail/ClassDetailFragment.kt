@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.deagle.R
@@ -13,6 +14,9 @@ import com.example.deagle.databinding.FragmentClassDetailBinding
 import com.example.deagle.ui.DetailKelasSayaActivity
 import com.example.deagle.ui.PembayaranActivity
 import com.example.deagle.ui.UlasanMentorActivity
+=======
+import com.example.deagle.databinding.FragmentClassDetailBinding
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 import com.example.deagle.ui.kelas.detail.adapter.ClassMaterialPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -44,7 +48,10 @@ class ClassDetailFragment : Fragment() {
             TabLayoutMediator(classDetailTab, classMaterialViewPager) { tab: TabLayout.Tab, position: Int ->
                 tab.text = tabName[position]
             }.attach()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
         }
         binding.csUlasan.setOnClickListener {
             val intent = Intent(activity, DetailKelasSayaActivity::class.java)

@@ -2,7 +2,10 @@ package com.example.deagle.ui.kelas.detail
 
 import android.app.Dialog
 import android.content.Context
+<<<<<<< HEAD
 import android.content.Intent
+=======
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,7 +14,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.example.deagle.R
 import com.example.deagle.databinding.ConfirmationFinishDialogBinding
+<<<<<<< HEAD
 import com.example.deagle.ui.SelesaiActivity
+=======
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 import com.example.deagle.ui.kelas.quiz.QuizFragment
 
 
@@ -41,9 +47,13 @@ class ConfirmationFinishDialogFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             yesButton.setOnClickListener {
+<<<<<<< HEAD
                 val intent = Intent(requireContext(), SelesaiActivity::class.java)
                 startActivity(intent)
                 dismiss()
+=======
+
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
             }
 
             noButton.setOnClickListener {

@@ -44,7 +44,10 @@ class ClassDetailActivity() : AppCompatActivity() {
                 .commit()
         }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
     }
 
 

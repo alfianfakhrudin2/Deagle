@@ -6,10 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.deagle.R
+=======
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 import com.example.deagle.databinding.FragmentHomeBinding
 import com.example.deagle.helper.AutoScrollHelper
 import com.example.deagle.ui.adapter.ItemAdapter
@@ -36,6 +41,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+<<<<<<< HEAD
+=======
+        binding.recyclerViewHorizontal.adapter = rvHorizontal()
+        binding.recyclerViewHorizontal.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL, false)
+        binding.rvhorizontal1.adapter = rvKursus()
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
 
         // Hide the action bar
         (activity as? AppCompatActivity)?.supportActionBar?.hide()

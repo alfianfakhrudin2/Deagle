@@ -16,7 +16,11 @@
         style="@style/Deagle.Text.Title.Large"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Yakin Ingin Memberi Ulasan? "
+=======
+        android:text="Yakin Ingin Menyelesaikan?"
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
         android:lines="2"
         android:singleLine="false"
         android:textAlignment="center"/>
@@ -27,7 +31,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+<<<<<<< HEAD
         android:text="Konfirmasi jika sudah tidak ada perubahan"
+=======
+        android:text="Konfirmasi penyelesaian soal anda"
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
         android:textColor="?attr/colorOnBackground"
         android:textAlignment="center"/>
 
@@ -47,9 +55,13 @@
         android:textAppearance="@style/Deagle.Text.Title.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="@font/poppins_semibold"
         app:cornerRadius="8dp"
         android:textSize="14sp"
+=======
+        app:cornerRadius="8dp"
+>>>>>>> 9d92de3fa4536a80163abff7a1d8636ca4199695
         app:strokeColor="?attr/colorPrimary"
         android:text="Tidak" />
 
