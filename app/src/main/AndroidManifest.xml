@@ -17,7 +17,10 @@
         android:theme="@style/Theme.Deagle"
         tools:targetApi="31">
         <activity
-            android:name=".ui.GetStartedActivity"
+            android:name=".ui.DetailHasilPengerjaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RiwayatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.kelas.detail.ClassDetailActivity"
@@ -27,7 +30,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.LaporSoalActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ui.DetailHasilActivity"
             android:exported="true" />

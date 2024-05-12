@@ -56,8 +56,8 @@
         <!-- Arrow Icon -->
         <ImageView
             android:id="@+id/arrowImageView"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_right"
@@ -116,8 +116,8 @@
         <!-- Arrow Icon -->
         <ImageView
             android:id="@+id/arrowImageView2"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_right"

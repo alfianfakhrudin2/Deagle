@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.deagle.databinding.ActivityLoginBinding
 import com.example.deagle.databinding.ActivityStartBinding
 import com.example.deagle.ui.RegisterActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -24,9 +25,6 @@ class LoginActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.txtSignup.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
         binding.loginButton.setOnClickListener {
             // Menampilkan alert dialog
             showSuccessAlertDialog()
@@ -48,9 +46,9 @@ class LoginActivity : AppCompatActivity() {
         val alertDialog = builder.create()
 
         // Mengatur lebar dan tinggi dialog
-        alertDialog.window?.setLayout(width.toInt(), height)
+            alertDialog.window?.setLayout(width.toInt(), height)
 
-        alertDialog.setCanceledOnTouchOutside(false)
+            alertDialog.setCanceledOnTouchOutside(false)
 
         val btnLanjutkanLogin = view.findViewById<Button>(R.id.btnLanjutkanLogin1)
 

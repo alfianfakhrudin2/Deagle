@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         android:text="Quix\nApa itu UI/UX?"
         style="@style/Deagle.Text.Title.Small"
-        android:textColor="?attr/colorOnSurface"
+        android:textColor="@color/fonts"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:fontFamily="@font/font_1"
-        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,8 +26,8 @@
     <!-- Back Button -->
     <ImageView
         android:id="@+id/imageViewBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:src="@drawable/ic_back"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@id/textViewTitle"
@@ -39,7 +39,7 @@
         android:id="@+id/viewLine"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="15dp"
         android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +73,7 @@
                 app:strokeColor="@color/grey_500">
 
                 <LinearLayout
+                    android:id="@+id/cr_lapor_soal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"

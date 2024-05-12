@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.deagle.databinding.FragmentActiveBinding
 import com.example.deagle.ui.DetailClassActivity
+import com.example.deagle.ui.kelas.detail.ClassDetailActivity
 
 class ActiveFragment : Fragment() {
     private var _binding: FragmentActiveBinding? = null
@@ -39,7 +40,8 @@ class ActiveFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.constraintLayoutDesignMastery.setOnClickListener {
-            val intent = Intent(activity, DetailClassActivity::class.java)
+//            val intent = Intent(activity, DetailClassActivity::class.java)
+            val intent = Intent(activity, ClassDetailActivity::class.java)
             startActivity(intent)
         }
     }

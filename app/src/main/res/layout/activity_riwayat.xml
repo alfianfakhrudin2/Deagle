@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RiwayatActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/fonts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <TextView
+        android:id="@+id/txt_title_informasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Deskripsi"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewLine" />
+
+    <TextView
+        android:id="@+id/desc_riwayat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Yang saya tau UX itu User Manajemen kak \ncoba dicek lagi"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_informasi" />
+
+    <TextView
+        android:id="@+id/tv_title_screenshoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Screenshoot"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/fonts"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_riwayat" />
+
+    <RadioGroup
+        android:id="@+id/quiz_answer_incorrect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_screenshoot"
+        app:layout_goneMarginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/answer_a_rb_incorrect"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:drawableStart="@drawable/a_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Interface"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_b_rb_incorrect"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:drawableStart="@drawable/b_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Experience"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_c_rb_incorrect"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_selected_error_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:drawableStart="@drawable/c_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Management"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_d_rb_incorrect"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/d_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Analysis"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jawaban yang benar adalah 'B', User Experience"
+        android:layout_marginStart="20dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/primaryClr"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quiz_answer_incorrect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

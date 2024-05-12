@@ -32,11 +32,11 @@ class DashboardFragment : Fragment() {
         val root: View = binding.root
 
         binding.searchView.setOnClickListener{
-            val searchQuery = binding.searchView.query.toString().trim()
-            if(searchQuery.isNotEmpty()){
-//                viewModel.searchContents(searchQuery, 30)
-//                binding.chipGroup.check(R.id.chip_explore)
-            }
+//            val searchQuery = binding.searchView.query.toString().trim()
+//            if(searchQuery.isNotEmpty()){
+////                viewModel.searchContents(searchQuery, 30)
+////                binding.chipGroup.check(R.id.chip_explore)
+//            }
 
         }
 //        val textView: TextView = binding.textDashboard

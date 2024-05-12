@@ -14,9 +14,8 @@ import com.example.deagle.data.DeagleClassMaterial
 import com.example.deagle.databinding.ClassMaterialItemBinding
 
 class ClassMaterialRecyclerAdapter(
-    val onItemClickCallback: OnItemClickCallback
+    private val onItemClickCallback: OnItemClickCallback
 ) : RecyclerView.Adapter<ClassMaterialRecyclerAdapter.ClassMaterialViewHolder>() {
-
 
     private lateinit var data: List<DeagleClassMaterial>
     fun setData(data: List<DeagleClassMaterial>) {
@@ -40,11 +39,6 @@ class ClassMaterialRecyclerAdapter(
         val item = data[position]
         holder.binding.apply {
             classMaterialTitleText.text = item.title
-//            classMaterialStatusIcon.setImageDrawable(item.statusIcon?.let {
-//                holder.itemView.context.getDrawable(
-//                    it
-//                )
-//            })
             classMaterialStatusIcon.setImageResource(item.statusIcon!!)
             classMaterialDeadlineText.text = item.deadline
             classMaterialStatusFinishedText.text = if (item.isFinished) {

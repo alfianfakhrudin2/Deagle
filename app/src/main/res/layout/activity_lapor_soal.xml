@@ -72,7 +72,7 @@
         android:layout_height="148dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_rounded"
+        android:background="@drawable/bg_inputtext"
         android:layout_marginTop="20dp"
         android:hint="Masukkan Deskripsi"
         android:padding="10dp"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etDeskripsi" />
 
     <TextView
-        android:id="@+id/btnSelectImage"
+        android:id="@+id/btnSelectImage_soal"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
@@ -109,6 +109,7 @@
         android:paddingTop="40dp"
         android:hint="Pilih Gambar"
         android:textAlignment="center"
+        android:drawableTop="@drawable/ic_gallery"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTitleUpload" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnKirim"
+        android:id="@+id/btnKirimLapor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -131,6 +132,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage_soal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

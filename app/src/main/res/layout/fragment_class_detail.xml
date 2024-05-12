@@ -10,7 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar_layout"
@@ -36,6 +37,8 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/class_detail_banner_card"
             android:layout_width="0dp"
@@ -53,8 +56,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
-                android:src="@drawable/baner1"
-                android:scaleType="fitCenter"
+                android:src="@drawable/img_detail_class_saya"
+                android:scaleType="centerCrop"
                 android:contentDescription="@string/banner_class"/>
 
         </com.google.android.material.card.MaterialCardView>
@@ -89,6 +92,7 @@
             app:strokeColor="@color/grey_500">
 
             <LinearLayout
+                android:id="@+id/csUlasan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"

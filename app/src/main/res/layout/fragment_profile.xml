@@ -78,9 +78,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/font_1"
-            android:text="Profile"
-            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Aktivitas"
+            android:textColor="@color/fonts"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -168,7 +169,6 @@
             android:layout_marginTop="25dp"
             android:layout_marginStart="15dp"
             android:src="@drawable/fav_ic"
-            android:backgroundTint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ic_unduh" />
 
@@ -191,9 +191,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_medium"
             android:text="Pengaturan Akun"
-            android:textSize="18sp"
+            android:textColor="@color/fonts"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ic_whislist" />
 
@@ -307,6 +308,7 @@
             android:background="@drawable/bg_dialog"
             android:fontFamily="@font/font_1"
             android:text="Logout"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"

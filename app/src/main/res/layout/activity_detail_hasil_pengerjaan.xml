@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailHasilPengerjaanActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Quiz 1)\nApa itu UI/UX?"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewTitle" />
+
+    <!-- Garis Bawah -->
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mentor_member_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="5dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine"
+        app:strokeColor="@color/grey_500"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:id="@+id/cr_lapor_soal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:id="@+id/mentor_member_info_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_warning"
+                app:tint="#09AD7C" />
+
+            <TextView
+                android:id="@+id/mentor_member_info_text"
+                style="@style/Deagle.Text.Label.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:text="Lapor jika sekiranya ada kesalahan soal"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/mentor_member_info_detail_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_right_icon" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Apa yang dimaksud dengan “UI” dalam desain \nUI/UX?"
+        android:textColor="@color/fonts"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentor_member_info_card" />
+
+    <RadioGroup
+        android:id="@+id/quiz_answer_rg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_goneMarginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/answer_a_rb"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:drawableStart="@drawable/a_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Interface"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_b_rb"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/b_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Experience"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_c_rb"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/c_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Management"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/answer_d_rb"
+            style="@style/Deagle.Text.Body.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/quiz_answer_bg"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/d_unselected_icon"
+            android:drawablePadding="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:text="User Analysis"
+            android:textColor="@drawable/quiz_answer_text_color_selector" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginStart="25dp"
+        android:text="Jawaban benar adalah “A”, User Interface"
+        android:textColor="@color/primaryClr"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_answer_rg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

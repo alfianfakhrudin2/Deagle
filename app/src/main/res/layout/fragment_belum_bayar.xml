@@ -10,7 +10,9 @@
         android:id="@+id/constraintLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
         android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent">
         <!-- Foto -->
@@ -34,8 +36,9 @@
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/imageView"
             android:text="UI/UX Design Mastery"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/fonts"
+            android:textSize="14sp"
             android:layout_marginTop="26dp"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +51,8 @@
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/imageView"
             android:text="UI/UX"
-            android:textColor="@android:color/black"
+            android:textColor="@color/fonts"
+            android:fontFamily="@font/poppins_semibold"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
@@ -61,7 +65,7 @@
             android:text="Belum Bayar"
             android:textColor="@color/red"
             android:textStyle="bold"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_semibold"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -79,9 +83,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_medium"
             android:text="Rp. 120.000"
-            android:textColor="@android:color/black"
+            android:textColor="@color/fonts"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -110,9 +114,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total: Rp 120.000"
-            android:textColor="@android:color/black"
+            android:text="@string/total_rp_120_000"
+            android:textColor="@color/fonts"
             android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
             app:layout_constraintBottom_toBottomOf="@+id/textView8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView8" />
@@ -136,6 +141,7 @@
             android:backgroundTint="@color/primaryClr"
             android:fontFamily="@font/font_1"
             android:text="Bayar"
+            android:background="@drawable/bg_dialog"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"

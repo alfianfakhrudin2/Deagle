@@ -34,8 +34,9 @@
         android:layout_marginTop="20dp"
         android:text="Informasi Ulasan Mentor"
         android:layout_marginStart="20dp"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/fonts"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewLine" />
 
@@ -43,16 +44,16 @@
         android:id="@+id/txt_ketentuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/font_1"
+        android:fontFamily="@font/poppins_medium"
         android:text=" • Berikan keluh kesahmu di kolom deskripsi\n
 • Upload screenshoot sebagai bukti \n   pendukung (misal:screenshoot chat grup \n   ketika mentor kurang respon)\n
 • Laporan kamu akan kami terima, dan \n   kami akan segera mengevaluasinya\n
 • Laporan kamu bersifat anonim"
-        android:textColor="@color/black"
+        android:textColor="@color/fonts"
         android:paddingStart="20dp"
         android:textAlignment="textStart"
         android:layout_marginTop="15dp"
-        android:textSize="15sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_title_informasi" />
 
@@ -63,9 +64,9 @@
         android:layout_marginTop="20dp"
         android:text="Deskripsi"
         android:layout_marginStart="20dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/font_1"
-        android:textSize="20sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ketentuan" />
 
@@ -75,9 +76,8 @@
         android:layout_height="148dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_rounded"
+        android:background="@drawable/bg_inputtext"
         android:layout_marginTop="20dp"
-        android:hint="Masukkan Deskripsi"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -92,9 +92,9 @@
         android:layout_marginTop="20dp"
         android:text="Upload Screenshoot"
         android:layout_marginStart="20dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/font_1"
-        android:textSize="18sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDeskripsi" />
 
@@ -104,7 +104,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_upload"
-        android:fontFamily="@font/font_1"
+        android:fontFamily="@font/poppins_medium"
         android:paddingStart="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -112,8 +112,9 @@
         android:paddingTop="40dp"
         android:hint="@string/pilih_gambar"
         android:textAlignment="center"
+        android:drawableTop="@drawable/ic_gallery"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitleUpload" />

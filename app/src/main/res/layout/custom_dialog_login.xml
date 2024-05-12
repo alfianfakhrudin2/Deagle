@@ -2,10 +2,12 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="314dp"
-    android:layout_width="298dp"
-    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="54dp"
+    android:paddingVertical="48dp"
+    android:background="@drawable/confirmation_dialog_bg"
     android:layout_gravity="center"
     android:orientation="vertical"
     app:cardElevation="0dp"
@@ -13,8 +15,8 @@
 
         <ImageView
             android:id="@+id/imageViewIcon"
-            android:layout_width="58dp"
-            android:layout_height="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_sukses"
@@ -24,15 +26,14 @@
 
         <TextView
             android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="14dp"
             android:text="Login Berhasil"
+            style="@style/Deagle.Text.Title.Large"
             android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:textColor="?attr/colorOnBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewIcon" />
@@ -42,16 +43,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Silahkan Masuk"
+            style="@style/Deagle.Text.Body.Medium"
             android:textAlignment="center"
             android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:textColor="?attr/colorOnBackground"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLanjutkanLogin1"
-            android:layout_width="145dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/primaryClr"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/font_1"

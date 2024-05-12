@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/ivBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_back"
@@ -22,7 +22,7 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
-        android:background="@android:color/black"
+        android:background="@color/fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivBack" />
@@ -34,15 +34,16 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         android:text="Mentor"
-        android:textColor="@color/black"
-        android:textSize="21sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/fonts"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewLine" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
-        android:layout_width="32dp"
+        android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_centerVertical="true"
         android:contentDescription="@string/title_profile"
@@ -57,8 +58,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="Miyaz Mualim"
-        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
@@ -67,9 +70,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tim Kamu"
-        android:textSize="16sp"
-        android:fontFamily="@font/font_1"
-        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/fonts"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,9 +94,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="Ahmad Hisnan"
-        android:textSize="16sp"
         android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile2"
         app:layout_constraintStart_toEndOf="@+id/profile2"
         app:layout_constraintTop_toTopOf="@+id/profile2" />
 
@@ -114,9 +119,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Hamru Haqi"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Amru Haqi"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile3"
         app:layout_constraintStart_toEndOf="@+id/profile3"
         app:layout_constraintTop_toTopOf="@+id/profile3" />
 
@@ -136,9 +143,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
         android:text="Aleena Bahira"
-        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile4"
         app:layout_constraintStart_toEndOf="@+id/profile4"
         app:layout_constraintTop_toTopOf="@+id/profile4" />
 
@@ -148,10 +157,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Join Group"
-        android:textColor="@color/black"
-        android:textSize="21sp"
-        android:textStyle="bold"
+        android:textColor="@color/fonts"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile4" />
 
@@ -189,11 +198,10 @@
             android:layout_height="19dp"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/imageView"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Join Group Discord"
-            android:textColor="@android:color/black"
+            android:textColor="@color/fonts"
             android:textSize="14sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -204,12 +212,12 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@id/imageView"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_regular"
             android:padding="5dp"
             android:text="https://discord.com/channels/712"
             android:textAlignment="center"
-            android:textColor="@color/fonts"
-            android:textSize="11sp"
+            android:textColor="#878787"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
@@ -223,10 +231,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Ulasan Mentor"
-        android:textColor="@color/black"
-        android:fontFamily="@font/font_1"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clDiscord" />
 
@@ -236,15 +243,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="14dp"
-        android:fontFamily="@font/font_1"
-        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/fonts"
         android:text="Berikan keluh kesahmu terhadap mentor \nagar kami bisa mengevaluasinya"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ulasan" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clSchedule"
+        android:id="@+id/clUlasanMentor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_khrsus"
@@ -278,11 +285,10 @@
             android:layout_height="19dp"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@id/iv_warning"
-            android:fontFamily="@font/font_1"
-            android:text="Ulasan Mentord"
-            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Ulasan Mentor"
+            android:textColor="@color/fonts"
             android:textSize="14sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/iv_warning"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -294,12 +300,11 @@
             android:layout_marginTop="8dp"
             android:text="Kamu telah memberi ulasan 2x"
             android:textAlignment="center"
-            android:fontFamily="@font/font_1"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
             android:padding="7dp"
             android:background="@drawable/bg_rounded"
-            android:textColor="@color/fonts"
-            android:textSize="11sp"
+            android:textColor="@color/primaryClr"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/iv_warning"
             app:layout_constraintTop_toBottomOf="@+id/txt_title_ulasan" />
 

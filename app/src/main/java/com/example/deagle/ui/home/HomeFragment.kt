@@ -7,17 +7,23 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.example.deagle.R
 import com.example.deagle.databinding.FragmentHomeBinding
+import com.example.deagle.helper.AutoScrollHelper
 import com.example.deagle.ui.adapter.ItemAdapter
 import com.example.deagle.ui.adapter.KhursusAdapter
 import com.example.deagle.ui.adapter.rvHorizontal
 import com.example.deagle.ui.adapter.rvKursus
+import java.util.*
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var autoScrollHelper: AutoScrollHelper
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,7 +40,20 @@ class HomeFragment : Fragment() {
         // Hide the action bar
         (activity as? AppCompatActivity)?.supportActionBar?.hide()
 
-        // Set LinearLayoutManager to recyclerViewHorizontal
+        // Initialize AutoScrollHelper
+        autoScrollHelper = AutoScrollHelper(binding.recyclerViewHorizontal)
+
+        // Set up RecyclerView Horizontal
+        setupRecyclerViewHorizontal()
+
+        // Set up RecyclerView Horizontal 1
+        setupRecyclerViewHorizontal1()
+
+        // Start auto-scrolling
+        autoScrollHelper.startAutoScroll()
+    }
+
+    private fun setupRecyclerViewHorizontal() {
         binding.recyclerViewHorizontal.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         // Get list of heroes
@@ -44,7 +63,12 @@ class HomeFragment : Fragment() {
         val listHeroAdapter = rvHorizontal(requireContext(), listHeroes)
         binding.recyclerViewHorizontal.adapter = listHeroAdapter
 
-        // Set LinearLayoutManager to rvhorizontal1
+        // Add snap helper for snapping behavior
+        val snapHelper = LinearSnapHelper()
+        snapHelper.attachToRecyclerView(binding.recyclerViewHorizontal)
+    }
+
+    private fun setupRecyclerViewHorizontal1() {
         binding.rvhorizontal1.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         // Get list of kursus
@@ -56,6 +80,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun getListHeroes(): ArrayList<ItemAdapter> {
+        // Your implementation
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
 
         val listItems = ArrayList<ItemAdapter>()
@@ -92,4 +117,15 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    override fun onResume() {
+        super.onResume()
+        autoScrollHelper.startAutoScroll()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        autoScrollHelper.stopAutoScroll()
+    }
 }
+

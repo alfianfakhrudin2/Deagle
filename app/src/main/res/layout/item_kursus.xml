@@ -67,15 +67,16 @@
             android:text="Mengajarkan tentang prinsip-prinsip desain... "
             android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/tv_harga"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:textColor="@color/primaryClr"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Rp 120.000"
-                android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_harga_kursus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:textColor="@color/primaryClr"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Rp 120.000"
+            android:textSize="14sp" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -13,10 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sertifikat_saya"
-        android:textSize="21sp"
+        android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/fonts"
         android:fontFamily="@font/font_1"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -91,17 +92,18 @@
             app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
         <!-- Arrow Icon -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLihatSertifikat"
-            android:layout_width="wrap_content"
-            android:layout_height="52dp"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/primaryClr"
             android:text="Lihat Sertifikat"
-            android:textSize="11sp"
+            android:textSize="12sp"
+            android:background="@drawable/bg_dialog"
             android:textAllCaps="false"
-            android:fontFamily="@font/font_1"
+            android:fontFamily="@font/poppins_medium"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -155,15 +157,16 @@
             app:layout_constraintTop_toBottomOf="@+id/titleTextView2" />
 
         <!-- Button Lihat sertif -->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="52dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="110dp"
+            android:layout_height="33dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/primaryClr"
             android:text="Lihat Sertifikat"
-            android:textSize="11sp"
-            android:fontFamily="@font/font_1"
+            android:textSize="12sp"
+            android:background="@drawable/bg_dialog"
+            android:fontFamily="@font/poppins_medium"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"

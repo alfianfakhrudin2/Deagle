@@ -25,7 +25,7 @@
     <string name="password">Password</string>
     <string name="email">Email/NoTelp</string>
     <string name="logo">logo login</string>
-    <string name="login">Masuk ke akun anda</string>
+    <string name="login">Login</string>
     <string name="forget_password">Lupa password?</string>
     <string name="loginBtn">Login</string>
     <string name="cPassword">Confirm Password</string>
@@ -101,5 +101,6 @@
     <string name="screen4desc">Setelah berhasil menyelesaikan kelas, kamu akan diberi sertifikat yang tentunya bermanfaat untuk mendukung pencapaian karirmu</string>
     <string name="screen5desc">Sebelum memulai, pastikan jaringan internet kamu lancar, agar proses belajar dan penerapan materi bisa maksimal</string>
     <string name="rp_150_000"><strike>Rp 150.000</strike></string>
+    <string name="total_rp_120_000">Total : <b>Rp 120.000</b></string>
 
 </resources>
