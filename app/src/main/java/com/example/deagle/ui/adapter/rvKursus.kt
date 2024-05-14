@@ -1,36 +1,55 @@
 package com.example.deagle.ui.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.deagle.R
+import com.example.deagle.databinding.ItemKursusBinding
+import com.example.deagle.ui.DetailPembelianActivity
 
-class rvKursus(private val context: Context, private val itemList: ArrayList<KhursusAdapter>) : RecyclerView.Adapter<rvKursus.ListViewHolder>() {
+class rvKursus(private val context: Context, private val itemList: ArrayList<KhursusAdapter>) :
+    RecyclerView.Adapter<rvKursus.ListViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): rvKursus.ListViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_kursus, parent, false)
-        return ListViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
+        val binding = ItemKursusBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ListViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val item = itemList[position]
-        holder.imgPhoto.setImageResource(item.photo)
-        holder.tvName.text = item.nama
-        holder.tvPrice.text = item.harga
-        holder.tvDescription.text = item.deskripsi
+        holder.bind(item)
     }
 
     override fun getItemCount(): Int = itemList.size
 
+    inner class ListViewHolder(private val binding: ItemKursusBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto: ImageView = itemView.findViewById(R.id.iv_khursus)
-        val tvName: TextView = itemView.findViewById(R.id.tv_title_khursus)
-        val tvPrice: TextView = itemView.findViewById(R.id.tv_harga_kursus)
-        val tvDescription: TextView = itemView.findViewById(R.id.tv_description_khursus)
+        init {
+            binding.root.setOnClickListener(this)
+        }
+
+        fun bind(item: KhursusAdapter) {
+            binding.apply {
+                // Bind data to views
+                ivKhursus .setImageResource(item.photo)
+                tvTitleKhursus.text = item.nama
+                tvHargaKursus.text = item.harga
+                tvDescriptionKhursus.text = item.deskripsi
+            }
+        }
+
+        override fun onClick(v: View?) {
+            // Redirect to DetailPembelianActivity when clicked
+            val position = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                val intent = Intent(context, DetailPembelianActivity::class.java)
+                intent.putExtra("kursus_title", itemList[position].nama)
+                intent.putExtra("kursus_desc", itemList[position].deskripsi)
+                intent.putExtra("kursus_harga", itemList[position].harga)
+                context.startActivity(intent)
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.deagle.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.SearchView
 import android.widget.Toast
@@ -33,6 +34,19 @@ class DetailPembelianActivity : AppCompatActivity() {
         adapter = LanguageAdapter(mList)
         recyclerView.adapter = adapter
 
+        binding.btnBeli.setOnClickListener {
+            val intent = Intent(this, PembayaranActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.ivBack.setOnClickListener() {
+            onBackPressed()
+        }
+
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun addDataToList() {

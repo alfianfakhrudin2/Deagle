@@ -18,6 +18,7 @@ class UnduhSertifActivity : AppCompatActivity() {
         setContentView(binding.root)
         // Sembunyikan ActionBar
         supportActionBar?.hide()
+
         binding.imageViewBack.setOnClickListener {
             onBackPressed()
         }

@@ -48,12 +48,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/fav_ic"
+        android:src="@drawable/ic_like"
         app:layout_constraintBottom_toBottomOf="@+id/tv_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_title" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,8 +72,8 @@
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_class"
                 android:layout_marginTop="10dp"
+                android:src="@drawable/img_class"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -83,10 +84,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="UI/UX Design Mastery"
-                android:textSize="18sp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/font_1"
+                android:text="UI/UX Design Mastery"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -94,9 +95,9 @@
                 android:id="@+id/icCalendar"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/ic_calendar"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
+                android:src="@drawable/ic_calendar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -105,8 +106,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:textSize="14sp"
                 android:text="19 Agustus - 30 Desember 2023"
+                android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/icCalendar"
                 app:layout_constraintTop_toTopOf="@+id/icCalendar" />
 
@@ -116,9 +117,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="17dp"
+                android:fontFamily="@font/font_1"
                 android:text="Deskripsi"
                 android:textColor="@color/black"
-                android:fontFamily="@font/font_1"
                 android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icCalendar" />
@@ -127,8 +128,8 @@
                 android:id="@+id/txt_deskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:text="UI (User Interface) dan UX (User Experience), merupakan \nproses penting dalam menciptakan desain aplikasi atau \nweb. Ambil kursus UI/UX Design Mastery ini !, kamu tidak \nhanya belajar membuat tampilan yang terlihat bagus, \ntetapi juga menciptakan pengalaman pengguna yang \noptimal sesuai standar industri."
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -137,7 +138,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvDetailclass"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="450dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
@@ -145,14 +146,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi"/>
+                app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -174,10 +175,10 @@
             android:id="@+id/textView25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="Harga"
             android:textColor="@color/black"
-            android:layout_marginTop="10dp"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/textView23"
             app:layout_constraintTop_toTopOf="parent" />
@@ -197,10 +198,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/font_1"
             android:text="20%"
             android:textColor="@color/red"
-            android:layout_marginStart="10dp"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView27"
             app:layout_constraintStart_toEndOf="@+id/textView27"
@@ -208,7 +209,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/appCompatButton"
+            android:id="@+id/btnBeli"
             android:layout_width="130dp"
             android:layout_height="52dp"
             android:layout_marginEnd="20dp"

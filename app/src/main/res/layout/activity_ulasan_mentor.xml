@@ -6,135 +6,149 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.UlasanMentorActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/ivBack_ulasan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
 
-    <View
-        android:id="@+id/viewLine"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBack_ulasan" />
+            <ImageView
+                android:id="@+id/ivBack_ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txt_title_informasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Informasi Ulasan Mentor"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:textColor="@color/fonts"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewLine" />
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBack_ulasan" />
 
-    <TextView
-        android:id="@+id/txt_ketentuan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_medium"
-        android:text=" • Berikan keluh kesahmu di kolom deskripsi\n
+            <TextView
+                android:id="@+id/txt_title_informasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Informasi Ulasan Mentor"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/fonts"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLine" />
+
+            <TextView
+                android:id="@+id/txt_ketentuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text=" • Berikan keluh kesahmu di kolom deskripsi\n
 • Upload screenshoot sebagai bukti \n   pendukung (misal:screenshoot chat grup \n   ketika mentor kurang respon)\n
 • Laporan kamu akan kami terima, dan \n   kami akan segera mengevaluasinya\n
 • Laporan kamu bersifat anonim"
-        android:textColor="@color/fonts"
-        android:paddingStart="20dp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="15dp"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_title_informasi" />
+                android:textColor="@color/fonts"
+                android:paddingStart="20dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_informasi" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Deskripsi"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/fonts"
-        android:fontFamily="@font/poppins_semibold"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ketentuan" />
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Deskripsi"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/fonts"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ketentuan" />
 
-    <EditText
-        android:id="@+id/etDeskripsi"
-        android:layout_width="match_parent"
-        android:layout_height="148dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_inputtext"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+            <EditText
+                android:id="@+id/etDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_inputtext"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
-    <TextView
-        android:id="@+id/txtTitleUpload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Upload Screenshoot"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/fonts"
-        android:fontFamily="@font/poppins_semibold"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDeskripsi" />
+            <TextView
+                android:id="@+id/txtTitleUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Upload Screenshoot"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/fonts"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDeskripsi" />
 
-    <TextView
-        android:id="@+id/btnSelectImage"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_upload"
-        android:fontFamily="@font/poppins_medium"
-        android:paddingStart="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="40dp"
-        android:hint="@string/pilih_gambar"
-        android:textAlignment="center"
-        android:drawableTop="@drawable/ic_gallery"
-        android:textColor="@android:color/black"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitleUpload" />
+            <TextView
+                android:id="@+id/btnSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_upload"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="40dp"
+                android:hint="@string/pilih_gambar"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/ic_gallery"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleUpload" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnKirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_dialog"
-        android:backgroundTint="@color/primaryClr"
-        android:fontFamily="@font/font_1"
-        android:text="Kirim"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnKirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_dialog"
+                android:backgroundTint="@color/primaryClr"
+                android:fontFamily="@font/font_1"
+                android:text="Kirim"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelectImage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

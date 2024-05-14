@@ -28,5 +28,14 @@ class DetailLaporanSoalActivity : AppCompatActivity() {
             startActivity(Intent)
         }
 
+        binding.ivBack.setOnClickListener {
+            onBackPressed()
+        }
+    }
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        super.onBackPressed()
+        // Kembali ke fragment profile dengan menutup aktivitas SertifikatActivity
+        finish()
     }
 }
