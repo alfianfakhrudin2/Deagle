@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
@@ -14,24 +15,29 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.deagle.MainActivity
 import com.example.deagle.R
 
 class LaporSoalActivity : AppCompatActivity() {
 
     private val PICK_IMAGE_REQUEST = 1
     private lateinit var btnKirim: Button
+    private lateinit var btnback: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_lapor_soal)
         supportActionBar?.hide()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true) // Aktifkan tombol kembali
 
         val btnSelectImage = findViewById<TextView>(R.id.btnSelectImage_soal)
+        btnback = findViewById(R.id.ivBack)
         btnKirim = findViewById(R.id.btnKirimLapor)
         btnKirim.isEnabled = false
         btnKirim.alpha = 0.5f
+        btnback.setOnClickListener {
+            onBackPressed()
+        }
 
         btnSelectImage.setOnClickListener {
             openFileChooser()
@@ -131,4 +137,16 @@ class LaporSoalActivity : AppCompatActivity() {
         }
         return result
     }
+
+    // Penanganan tombol kembali
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }
+

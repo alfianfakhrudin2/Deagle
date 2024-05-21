@@ -20,15 +20,20 @@ class UlasanMentorActivity : AppCompatActivity() {
 
     private val PICK_IMAGE_REQUEST = 1
     private lateinit var btnKirim: Button
+    private lateinit var btnback: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ulasan_mentor)
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // Show back button in action bar
         val btnSelectImage = findViewById<TextView>(R.id.btnSelectImage)
+        btnback = findViewById(R.id.ivBack_ulasan)
         btnKirim = findViewById(R.id.btnKirim)
         btnKirim.isEnabled = false
         btnKirim.alpha = 0.5f
+        btnback.setOnClickListener {
+            onBackPressed()
+        }
 
         btnSelectImage.setOnClickListener {
             openFileChooser()
@@ -36,6 +41,8 @@ class UlasanMentorActivity : AppCompatActivity() {
         btnKirim.setOnClickListener {
             showSuccessAlertDialog()
         }
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -34,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:numStars="5"
+                android:clickable="false"
                 android:progressTint="@android:color/holo_orange_dark"
                 android:rating="4.5"
                 android:scaleX="0.45"
