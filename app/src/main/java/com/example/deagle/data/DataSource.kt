@@ -312,6 +312,10 @@ object DataSource {
             title = "Sabtu, 15 Oktober 2023",
             date = "Live session 1 - Pengenalan Figma",
         ),
+        DataSchedule(
+            title = "Sabtu, 15 Oktober 2023",
+            date = "Live session 1 - Pengenalan Figma",
+        ),
     )
 
     val dataMateri = listOf(
@@ -328,8 +332,4 @@ object DataSource {
             status = "Belum Dibaca",
         ),
     )
-
-//    val DataKursus =  listOf(
-//
-//    )
 }

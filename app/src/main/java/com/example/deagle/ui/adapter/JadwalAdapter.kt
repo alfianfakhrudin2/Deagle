@@ -31,7 +31,7 @@ class JadwalAdapter(private val onItemClickCallback: OnItemClickCallback): Recyc
     }
 
     override fun getItemCount(): Int {
-        return 25
+        return data.size
     }
 
     inner class ViewHolder(val binding: JadwalItemBinding, val onItemClickCallback: OnItemClickCallback): RecyclerView.ViewHolder(binding.root) {
